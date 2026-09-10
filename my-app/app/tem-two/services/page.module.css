@@ -1,0 +1,17 @@
+.page { max-width: 72rem; margin: 0 auto; padding: 9rem 1.5rem 6rem; }
+.eyebrow { color: #4a7c59; font-size: .75rem; font-weight: 700; letter-spacing: .18em; text-transform: uppercase; }
+.title { margin: 1rem 0 0; font-family: Georgia, serif; font-size: clamp(2.5rem, 5vw, 4rem); font-weight: 500; line-height: 1.1; }
+.grid { display: grid; gap: 1.5rem; margin-top: 3.5rem; }
+.card { padding: 2rem; border-radius: 1.5rem; background: #f0ece4; transition: transform .2s ease, box-shadow .2s ease; }
+.card:hover { transform: translateY(-.25rem); box-shadow: 0 1rem 2rem rgb(46 50 48 / .1); }
+.cardTitle { margin: 0; font-family: Georgia, serif; font-size: 1.5rem; }
+.cardCopy { margin: 1rem 0 0; color: #646b66; line-height: 1.75; }
+@media (min-width: 768px) { .grid { grid-template-columns: repeat(3, 1fr); } }
+
+@media (max-width: 374px) {
+  .page { padding: 6.5rem 1rem 4rem; }
+  .title { font-size: 2.25rem; }
+  .grid { gap: 1rem; margin-top: 2.5rem; }
+  .card { padding: 1.25rem; border-radius: 1.125rem; }
+}
+

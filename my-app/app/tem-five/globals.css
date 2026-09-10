@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&family=Space+Grotesk:wght@400;700&display=swap');
+
+:root {
+  /* Color Palette */
+  --color-mint: #a7f3d0;
+  --color-mint-dark: #6ee7b7;
+  --color-yellow: #fde68a;
+  --color-cream: #fef3c7;
+  --color-maroon: #4c1d95; /* Deep purple/maroon as a bold contrast */
+  --color-maroon-dark: #31135e;
+  --color-white: #ffffff;
+  --color-black: #000000;
+  
+  /* Typography */
+  --font-heading: 'Oswald', sans-serif;
+  --font-body: 'Space Grotesk', sans-serif;
+  
+  /* Brutalist UI variables */
+  --shadow-offset: 6px;
+  --border-width: 4px;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--font-body);
+  background-color: var(--color-cream);
+  color: var(--color-maroon);
+  overflow-x: hidden;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-heading);
+  text-transform: uppercase;
+  font-weight: 700;
+  line-height: 1.1;
+}
+
+/* Utilities */
+.graph-paper {
+  background-image: 
+    linear-gradient(var(--color-maroon) 1px, transparent 1px),
+    linear-gradient(90deg, var(--color-maroon) 1px, transparent 1px);
+  background-size: 40px 40px;
+  background-position: center center;
+  opacity: 0.1;
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+}
+
+.brutalist-border {
+  border: var(--border-width) solid var(--color-maroon);
+}
+
+.brutalist-shadow {
+  box-shadow: var(--shadow-offset) var(--shadow-offset) 0 var(--color-maroon);
+}
+
+.brutalist-interactive {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.brutalist-interactive:hover {
+  transform: translate(calc(-1 * var(--shadow-offset) / 2), calc(-1 * var(--shadow-offset) / 2));
+  box-shadow: calc(var(--shadow-offset) * 1.5) calc(var(--shadow-offset) * 1.5) 0 var(--color-maroon);
+}
+
+.pill-shape {
+  border-radius: 9999px;
+}
+
+.floating {
+  animation: float 4s ease-in-out infinite;
+}
+
+@keyframes float {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-15px); }
+  100% { transform: translateY(0px); }
+}
+
+/* Base Sections */
+section {
+  position: relative;
+  overflow: hidden;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+  position: relative;
+  z-index: 1;
+}
+
+/* --- ANIMATION UTILITIES --- */
+
+/* Scroll Reveal Fade-Up */
+.reveal-up {
+  opacity: 0;
+  transform: translateY(30px) scale(0.98);
+  transition: opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1), transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+  will-change: opacity, transform;
+}
+
+.reveal-up.revealed {
+  opacity: 1;
+  transform: translateY(0) scale(1);
+}
+
+/* Staggered Delays for lists/cards */
+.delay-100 { transition-delay: 100ms; }
+.delay-200 { transition-delay: 200ms; }
+.delay-300 { transition-delay: 300ms; }
+.delay-400 { transition-delay: 400ms; }
+
+/* Subtle Image Zoom on Hover/Scroll */
+.img-zoom {
+  transition: transform 1.5s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.img-zoom:hover,
+.reveal-up.revealed .img-zoom {
+  transform: scale(1.05);
+}
+
+/* Native CSS Parallax Background */
+.parallax-bg {
+  background-attachment: fixed !important;
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+  background-size: cover !important;
+}
+

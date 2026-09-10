@@ -1,0 +1,75 @@
+/* @import "tailwindcss"; */
+
+:root {
+  --terra-ink: #2e3230;
+  --terra-muted: #646b66;
+  --terra-paper: #faf6f0;
+  --terra-surface: #f0ece4;
+  --terra-green: #4a7c59;
+}
+
+* { box-sizing: border-box; }
+
+html { scroll-behavior: smooth; }
+
+body {
+  margin: 0;
+  background: var(--terra-paper);
+  color: var(--terra-ink);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+button, input, textarea, select { font: inherit; }
+
+img { max-width: 100%; }
+
+@media (max-width: 374px) {
+  html, body { overflow-x: hidden; }
+
+  header > div:first-child {
+    height: 4rem !important;
+    gap: .75rem !important;
+    padding-inline: 1rem !important;
+  }
+
+  header > div:first-child > a > span:last-child {
+    font-size: 1.25rem !important;
+    letter-spacing: .16em !important;
+  }
+
+  main > div > section { padding-inline: 1rem !important; }
+  footer { padding-inline: 1rem !important; }
+  footer form { flex-wrap: wrap; }
+  footer form input, footer form button { width: 100%; }
+  footer form button { justify-content: center; }
+  footer p, footer a { overflow-wrap: anywhere; }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(15px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in-up {
+  animation: fadeInUp 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+@keyframes continuousZoom {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+}
+
+.animate-continuous-zoom {
+  animation: continuousZoom 15s ease-in-out infinite;
+}
+

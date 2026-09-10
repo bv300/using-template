@@ -1,0 +1,31 @@
+.marquee-container {
+  width: 100vw;
+  overflow: hidden;
+  background-color: var(--color-black);
+  color: var(--color-yellow);
+  padding: 1rem 0;
+  display: flex;
+  white-space: nowrap;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 10;
+  border-top: var(--border-width) solid var(--color-maroon);
+  border-bottom: var(--border-width) solid var(--color-maroon);
+}
+
+.marquee-content {
+  display: inline-block;
+  animation: marquee 20s linear infinite;
+  font-family: var(--font-heading);
+  font-size: 2rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding-left: 2rem;
+}
+
+@keyframes marquee {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+

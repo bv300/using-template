@@ -1,0 +1,44 @@
+/* CSS Reset */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html, body { height: 100%; max-width: 100%; overflow-x: hidden; }
+body {
+  font-family: "Plus Jakarta Sans", "Inter", sans-serif;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  background-color: var(--surface);
+  color: var(--ink);
+}
+img, picture, video, canvas, svg { display: block; max-width: 100%; }
+input, button, textarea, select { font: inherit; outline: none; border: none; }
+button, a { -webkit-tap-highlight-color: transparent; }
+a { text-decoration: none; color: inherit; }
+ul, ol { list-style: none; }
+html { scroll-behavior: smooth; }
+
+/* Variables */
+:root {
+  --surface: #F7F9FC;
+  --ink: #0B2545;
+  --ink-70: rgba(11, 37, 69, 0.7);
+  --ink-60: rgba(11, 37, 69, 0.6);
+  --ink-40: rgba(11, 37, 69, 0.4);
+  --accent: #EF8354;
+  --border-light: rgba(11, 37, 69, 0.18);
+}
+
+/* Base Utility Classes */
+.font-malayalam {
+  font-family: var(--font-malayalam), "Noto Sans Malayalam", sans-serif;
+}
+::selection { background: var(--accent); color: var(--surface); }
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: var(--surface); }
+::-webkit-scrollbar-thumb { background: var(--ink-40); border-radius: 9999px; }
+::-webkit-scrollbar-thumb:hover { background: var(--accent); }
+.hide-scrollbar::-webkit-scrollbar { display: none; }
+.hide-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+

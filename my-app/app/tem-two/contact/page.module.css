@@ -1,0 +1,19 @@
+.page { max-width: 56rem; margin: 0 auto; padding: 9rem 1.5rem 6rem; }
+.eyebrow { color: #4a7c59; font-size: .75rem; font-weight: 700; letter-spacing: .18em; text-transform: uppercase; }
+.title { margin: 1rem 0 0; font-family: Georgia, serif; font-size: clamp(2.5rem, 5vw, 4rem); font-weight: 500; line-height: 1.1; }
+.copy { margin-top: 1.5rem; color: #646b66; font-size: 1.125rem; line-height: 1.8; }
+.form { display: grid; gap: 1.5rem; margin-top: 3rem; padding: 2rem; border-radius: 1.5rem; background: #f0ece4; }
+.label { display: grid; gap: .5rem; color: #4a4e4a; font-size: .875rem; font-weight: 600; }
+.field { width: 100%; padding: .8rem 1rem; border: 1px solid #c4c8bc; border-radius: .75rem; background: #fff; color: #2e3230; font: inherit; outline: none; }
+.field:focus { border-color: #4a7c59; box-shadow: 0 0 0 3px rgb(74 124 89 / .15); }
+.button { justify-self: start; padding: .8rem 1.5rem; border: 0; border-radius: 999px; background: #4a7c59; color: #fff; font: inherit; font-weight: 600; cursor: pointer; transition: background .2s ease; }
+.button:hover { background: #375d42; }
+
+@media (max-width: 374px) {
+  .page { padding: 6.5rem 1rem 4rem; }
+  .title { font-size: 2.25rem; }
+  .copy { font-size: 1rem; line-height: 1.7; }
+  .form { gap: 1.25rem; margin-top: 2.25rem; padding: 1.25rem; border-radius: 1.125rem; }
+  .button { width: 100%; }
+}
+

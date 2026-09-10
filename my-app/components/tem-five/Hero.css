@@ -1,0 +1,60 @@
+.hero-section {
+  height: 100vh;
+  background-color: var(--color-mint);
+  /* The graph-paper div handles the pattern now, parallax-bg on section handles attachment */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  text-align: center;
+}
+
+.hero-title {
+  font-size: clamp(4rem, 15vw, 12rem);
+  color: var(--color-maroon);
+  text-shadow: var(--shadow-offset) var(--shadow-offset) 0px var(--color-white);
+  margin: 0;
+  z-index: 2;
+  position: relative;
+}
+
+.floating-badge {
+  position: absolute;
+  background-color: var(--color-yellow);
+  color: var(--color-maroon);
+  padding: 1rem 2rem;
+  font-family: var(--font-heading);
+  font-size: 1.5rem;
+  z-index: 3;
+}
+
+.badge-1 {
+  top: 20%;
+  left: 10%;
+  animation-delay: 0s;
+}
+
+.badge-2 {
+  top: 30%;
+  right: 15%;
+  animation-delay: 1s;
+  background-color: var(--color-cream);
+}
+
+.badge-3 {
+  bottom: 30%;
+  left: 20%;
+  animation-delay: 2s;
+  background-color: var(--color-white);
+}
+
+@media (max-width: 768px) {
+  .floating-badge {
+    font-size: 0.875rem;
+    padding: 0.5rem 1rem;
+  }
+  .badge-1 { top: 15%; left: 5%; }
+  .badge-2 { top: 25%; right: 5%; }
+  .badge-3 { bottom: 25%; left: 10%; }
+}
+

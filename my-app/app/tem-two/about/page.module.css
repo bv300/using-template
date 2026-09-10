@@ -1,0 +1,23 @@
+.page {
+  max-width: 64rem;
+  margin: 0 auto;
+  padding: 9rem 1.5rem 6rem;
+}
+
+.eyebrow {
+  color: #4a7c59;
+  font-size: .75rem;
+  font-weight: 700;
+  letter-spacing: .18em;
+  text-transform: uppercase;
+}
+
+.title { margin: 1rem 0 0; font-family: Georgia, serif; font-size: clamp(2.5rem, 6vw, 4.5rem); font-weight: 500; line-height: 1.08; }
+.copy { max-width: 42rem; margin-top: 1.75rem; color: #646b66; font-size: 1.125rem; line-height: 1.8; }
+
+@media (max-width: 374px) {
+  .page { padding: 6.5rem 1rem 4rem; }
+  .title { font-size: 2.25rem; }
+  .copy { font-size: 1rem; line-height: 1.7; }
+}
+
