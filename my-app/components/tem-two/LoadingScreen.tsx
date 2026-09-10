@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import styles from "./LoadingScreen.module.css";
 
 export default function LoadingScreen() {
   const [loadingState, setLoadingState] = useState<"loading" | "fading" | "hidden">("loading");
@@ -37,15 +38,15 @@ export default function LoadingScreen() {
 
   return (
     <div 
-      className="fixed inset-0 z-[9999] flex flex-col items-center justify-center bg-[#faf6f0] overflow-hidden"
+      className={styles.overlay}
       style={{
         opacity: loadingState === "fading" ? 0 : 1,
         transition: "opacity 0.8s ease-in-out",
       }}
     >
       {/* Decorative background SVG */}
-      <div className="absolute opacity-5 text-[#4a7c59]">
-        <svg viewBox="0 0 100 100" fill="none" stroke="currentColor" className="w-[300px] h-[300px] md:w-[500px] md:h-[500px] stroke-[2] stroke-linecap-round stroke-linejoin-round">
+      <div className={styles.backgroundSvg}>
+        <svg viewBox="0 0 100 100" fill="none" stroke="currentColor" className={styles.svgIcon}>
           <path d="M 50 46 Q 32 25 50 5 Q 68 25 50 46 Z"></path>
           <path d="M 50 54 Q 32 75 50 95 Q 68 75 50 54 Z"></path>
           <path d="M 46 50 Q 25 32 5 50 Q 25 68 46 50 Z"></path>
@@ -59,31 +60,24 @@ export default function LoadingScreen() {
 
       {/* Central Logo */}
       <div 
-        className="relative z-10 flex flex-col items-center"
+        className={styles.content}
         style={{
           opacity: opacity,
           transform: `scale(${scale})`,
           transition: "opacity 1s ease-out, transform 1s cubic-bezier(0.16, 1, 0.3, 1)",
         }}
       >
-        <span className="flex h-20 w-20 items-center justify-center rounded-full bg-[#4a7c59] font-serif text-4xl font-bold text-white shadow-2xl mb-4">
+        <span className={styles.logoCircle}>
           T
         </span>
-        <span className="font-serif text-3xl font-semibold tracking-[0.22em] text-[#2e3230]">
+        <span className={styles.logoText}>
           TERRA
         </span>
-        <div className="mt-6 w-32 h-[2px] bg-[#c4c8bc]/30 relative overflow-hidden">
-          <div className="absolute top-0 left-0 h-full bg-[#4a7c59] w-full animate-[loadingBar_2s_ease-in-out_infinite]" style={{ transformOrigin: "left" }} />
+        <div className={styles.loadingBarContainer}>
+          <div className={styles.loadingBarProgress} />
         </div>
       </div>
-
-      <style jsx>{`
-        @keyframes loadingBar {
-          0% { transform: scaleX(0); opacity: 1; }
-          50% { transform: scaleX(1); opacity: 1; }
-          100% { transform: scaleX(1); opacity: 0; }
-        }
-      `}</style>
     </div>
   );
 }
+

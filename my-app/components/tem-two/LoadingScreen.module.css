@@ -1,0 +1,90 @@
+.overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #faf6f0;
+  overflow: hidden;
+}
+
+.backgroundSvg {
+  position: absolute;
+  opacity: 0.05;
+  color: #4a7c59;
+}
+
+.svgIcon {
+  width: 300px;
+  height: 300px;
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+@media (min-width: 768px) {
+  .svgIcon {
+    width: 500px;
+    height: 500px;
+  }
+}
+
+.content {
+  position: relative;
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.logoCircle {
+  display: flex;
+  height: 5rem; /* h-20 */
+  width: 5rem; /* w-20 */
+  align-items: center;
+  justify-content: center;
+  border-radius: 9999px;
+  background-color: #4a7c59;
+  font-family: serif;
+  font-size: 2.25rem; /* text-4xl */
+  font-weight: 700;
+  color: white;
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+  margin-bottom: 1rem; /* mb-4 */
+}
+
+.logoText {
+  font-family: serif;
+  font-size: 1.875rem; /* text-3xl */
+  font-weight: 600;
+  letter-spacing: 0.22em; /* tracking-[0.22em] */
+  color: #2e3230;
+}
+
+.loadingBarContainer {
+  margin-top: 1.5rem; /* mt-6 */
+  width: 8rem; /* w-32 */
+  height: 2px;
+  background-color: rgba(196, 200, 188, 0.3); /* bg-[#c4c8bc]/30 */
+  position: relative;
+  overflow: hidden;
+}
+
+.loadingBarProgress {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #4a7c59;
+  transform-origin: left;
+  animation: loadingBar 2s ease-in-out infinite;
+}
+
+@keyframes loadingBar {
+  0% { transform: scaleX(0); opacity: 1; }
+  50% { transform: scaleX(1); opacity: 1; }
+  100% { transform: scaleX(1); opacity: 0; }
+}

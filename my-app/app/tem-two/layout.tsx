@@ -15,7 +15,7 @@ export default function RootLayout({
 }: Readonly<{ children: React.ReactNode }>) {
   return (
     <div>
-      <div className="min-h-screen bg-[#faf6f0] text-[#2e3230] antialiased">
+      <div>
         <LoadingScreen />
         <Header />
         <main>{children}</main>

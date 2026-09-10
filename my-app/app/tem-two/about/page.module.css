@@ -1,23 +1,79 @@
 .page {
-  max-width: 64rem;
   margin: 0 auto;
-  padding: 9rem 1.5rem 6rem;
+  max-width: 80rem; /* max-w-7xl */
+  padding: 8rem 1.5rem; /* py-32 px-6 */
+}
+
+@media (min-width: 1024px) {
+  .page {
+    padding-inline: 3rem; /* lg:px-12 */
+  }
+}
+
+.grid {
+  display: grid;
+  gap: 4rem; /* gap-16 */
+}
+
+@media (min-width: 1024px) {
+  .grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    align-items: center;
+  }
 }
 
 .eyebrow {
   color: #4a7c59;
-  font-size: .75rem;
+  font-size: 0.75rem;
   font-weight: 700;
-  letter-spacing: .18em;
+  letter-spacing: 0.18em;
   text-transform: uppercase;
+  margin: 0;
 }
 
-.title { margin: 1rem 0 0; font-family: Georgia, serif; font-size: clamp(2.5rem, 6vw, 4.5rem); font-weight: 500; line-height: 1.08; }
-.copy { max-width: 42rem; margin-top: 1.75rem; color: #646b66; font-size: 1.125rem; line-height: 1.8; }
-
-@media (max-width: 374px) {
-  .page { padding: 6.5rem 1rem 4rem; }
-  .title { font-size: 2.25rem; }
-  .copy { font-size: 1rem; line-height: 1.7; }
+.title {
+  margin: 1.5rem 0 0;
+  font-family: serif;
+  font-size: 3rem; /* text-5xl */
+  font-weight: 500;
+  line-height: 1.1;
+  color: #2e3230;
 }
 
+@media (min-width: 640px) {
+  .title {
+    font-size: 3.75rem; /* sm:text-6xl */
+  }
+}
+
+.copy {
+  margin-top: 2rem;
+  font-size: 1.125rem; /* text-lg */
+  line-height: 1.625;
+  color: #646b66;
+}
+
+.imageWrapper {
+  position: relative;
+  aspect-ratio: 4/5;
+  overflow: hidden;
+  border-radius: 1.5rem;
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+}
+
+.image {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  animation: continuousZoom 15s ease-in-out infinite;
+  will-change: transform;
+}
+
+@keyframes continuousZoom {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+}
