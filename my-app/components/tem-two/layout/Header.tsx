@@ -45,12 +45,12 @@ export default function Header() {
           ))}
         </nav>
         <div className={styles.actions}>
-          <Link
+          {/* <Link
             href="#contact"
             className={styles.ctaButton}
           >
             Start Your Project
-          </Link>
+          </Link> */}
           <button
             type="button"
             aria-label="Toggle menu"
@@ -91,13 +91,13 @@ export default function Header() {
             ))}
           </nav>
         </div>
-        <Link
+        {/* <Link
           href="#contact"
           onClick={() => setIsOpen(false)}
           className={styles.mobileCta}
         >
           Start Your Project
-        </Link>
+        </Link> */}
       </div>
     </header>
   );

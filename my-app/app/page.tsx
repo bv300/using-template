@@ -2,11 +2,11 @@ import Link from 'next/link';
 import styles from './page.module.css';
 
 const projects = [
-  { id: 'tem-one', name: 'Digital Strategy', desc: 'Modern Digital Solutions & Strategy' },
-  { id: 'tem-two', name: 'Next-Gen Analytics', desc: 'Unlock insights from your data' },
-  { id: 'tem-three', name: 'Creative Portfolio', desc: 'Showcase your creative work' },
-  { id: 'tem-four', name: 'E-commerce Hub', desc: 'The future of online shopping' },
-  { id: 'tem-five', name: 'Enterprise Platform', desc: 'Scale your business globally' }
+  { id: 'tem-one', name: 'Template-one', desc: 'Modern Digital Solutions & Strategy' },
+  { id: 'tem-two', name: 'Template-two', desc: 'Unlock insights from your data' },
+  { id: 'tem-three', name: 'Template-three', desc: 'Showcase your creative work' },
+  { id: 'tem-four', name: 'Template-four', desc: 'The future of online shopping' },
+  { id: 'tem-five', name: 'Template-five', desc: 'Scale your business globally' }
 ];
 
 export default function Home() {

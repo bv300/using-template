@@ -42,6 +42,33 @@ export function ContactSection() {
                 <div className="email-text">example@gmail.com</div>
               </div>
 
+              {/* find us location row */}
+              <div className="email-row" style={{ flexShrink: 0 }}>
+                <div className="email-icon-wrapper">
+                  <svg
+                    className="email-icon"
+                    fill="none"
+                    stroke="currentColor"
+                    strokeWidth={1.8}
+                    viewBox="0 0 24 24"
+                    aria-hidden="true"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z"
+                    />
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z"
+                    />
+                  </svg>
+                  <span className="email-label">FIND US</span>
+                </div>
+                <div className="email-text">Kerala, India</div>
+              </div>
+
               <div className="contact-buttons-row">
                 {/* CALL US */}
                 <div className="contact-card">
@@ -111,33 +138,6 @@ export function ContactSection() {
                   </svg>
                   <span className="contact-card-title">Instagram</span>
                 </div>
-              </div>
-
-              {/* find us location row */}
-              <div className="email-row" style={{ flexShrink: 0 }}>
-                <div className="email-icon-wrapper">
-                  <svg
-                    className="email-icon"
-                    fill="none"
-                    stroke="currentColor"
-                    strokeWidth={1.8}
-                    viewBox="0 0 24 24"
-                    aria-hidden="true"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z"
-                    />
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z"
-                    />
-                  </svg>
-                  <span className="email-label">FIND US</span>
-                </div>
-                <div className="email-text">Kerala, India</div>
               </div>
             </div>
 

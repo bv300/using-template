@@ -49,7 +49,7 @@ export default function Footer() {
             Receive curated essays on biophilic design, mindful engineering, and
             quarterly architecture notes.
           </p>
-          <form className={styles.form}>
+          {/* <form className={styles.form}>
             <input
               aria-label="Email address"
               type="email"
@@ -62,7 +62,7 @@ export default function Footer() {
             >
               Subscribe
             </button>
-          </form>
+          </form> */}
         </div>
       </div>
       <div className={styles.bottom}>
