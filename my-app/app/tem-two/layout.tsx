@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Header from "@/components/tem-two/layout/Header";
 import Footer from "@/components/tem-two/layout/Footer";
 import LoadingScreen from "@/components/tem-two/LoadingScreen";
+import FloatingBackButton from "@/components/FloatingBackButton";
 import "./globals.css";
 
 export const metadata: Metadata = {
@@ -20,6 +21,7 @@ export default function RootLayout({
         <Header />
         <main>{children}</main>
         <Footer />
+        <FloatingBackButton />
       </div>
     </div>
   );

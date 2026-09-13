@@ -57,21 +57,26 @@
 /* Give each tier a distinct premium color from our palette */
 .tier1 {
   background-color: var(--primary);
+  padding: 0.5rem 5%;
 }
 
 .tier2 {
   background-color: var(--secondary);
+  padding: 0.5rem 10%;
 }
 
 .tier3 {
   background-color: var(--accent);
+  padding: 0.5rem 15%;
 }
 
 .tier4 {
   background-color: var(--primary-dark);
+  padding: 0.5rem 20%;
 }
 
 .tier5 {
   background-color: #1e1b4b; /* Even darker shade for the final tier */
+  padding: 0.5rem 25%;
 }
 

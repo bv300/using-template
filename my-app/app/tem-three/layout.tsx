@@ -4,6 +4,7 @@ import "./globals.css";
 import Navbar from "@/components/tem-three/Navbar";
 import Footer from "@/components/tem-three/Footer";
 import ScrollToTop from "@/components/tem-three/ScrollToTop";
+import FloatingBackButton from "@/components/FloatingBackButton";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -30,6 +31,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         </div>
         <Footer />
         <ScrollToTop />
+        <FloatingBackButton />
       </div>
     </div>
   );

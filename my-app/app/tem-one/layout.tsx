@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Noto_Sans_Malayalam } from "next/font/google";
 import "./globals.css";
+import FloatingBackButton from "@/components/FloatingBackButton";
 
 const malayalam = Noto_Sans_Malayalam({
   subsets: ["malayalam"],
@@ -30,7 +31,10 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           rel="stylesheet"
         />
       
-      <div className="min-h-full flex flex-col">{children}</div>
+      <div className="min-h-full flex flex-col">
+        {children}
+        <FloatingBackButton />
+      </div>
     </div>
   );
 }

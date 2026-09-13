@@ -15,14 +15,14 @@ export default function Home() {
       {/* Background elements */}
       <div className={styles.blob1}></div>
       <div className={styles.blob2}></div>
-      
+
       <main className={styles.main}>
         <header className={styles.header}>
           <h1 className={styles.title}>
             Project <span className={styles.highlight}>Hub</span>
           </h1>
           <p className={styles.subtitle}>
-            Explore the cutting-edge collection of modern templates.
+            Find the perfect starting point for your next project from our collection of beautiful, ready-to-use templates.
           </p>
         </header>
 

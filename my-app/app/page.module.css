@@ -10,7 +10,8 @@
   align-items: center;
 }
 
-.blob1, .blob2 {
+.blob1,
+.blob2 {
   position: absolute;
   filter: blur(120px);
   z-index: 0;
@@ -21,7 +22,8 @@
 .blob1 {
   width: 500px;
   height: 500px;
-  background: rgba(99, 102, 241, 0.3); /* Indigo */
+  background: rgba(99, 102, 241, 0.3);
+  /* Indigo */
   top: -200px;
   left: -100px;
 }
@@ -29,16 +31,25 @@
 .blob2 {
   width: 600px;
   height: 600px;
-  background: rgba(236, 72, 153, 0.2); /* Pink */
+  background: rgba(236, 72, 153, 0.2);
+  /* Pink */
   bottom: -300px;
   right: -200px;
   animation-delay: -10s;
 }
 
 @keyframes float {
-  0% { transform: translate(0, 0) scale(1); }
-  50% { transform: translate(100px, 50px) scale(1.1); }
-  100% { transform: translate(-50px, 100px) scale(0.9); }
+  0% {
+    transform: translate(0, 0) scale(1);
+  }
+
+  50% {
+    transform: translate(100px, 50px) scale(1.1);
+  }
+
+  100% {
+    transform: translate(-50px, 100px) scale(0.9);
+  }
 }
 
 .main {
@@ -107,7 +118,7 @@
   content: '';
   position: absolute;
   inset: 0;
-  background: linear-gradient(135deg, rgba(255,255,255,0.1), transparent);
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), transparent);
   opacity: 0;
   transition: opacity 0.4s ease;
 }
@@ -194,17 +205,35 @@
 }
 
 @keyframes fadeDown {
-  from { opacity: 0; transform: translateY(-30px); }
-  to { opacity: 1; transform: translateY(0); }
+  from {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 @keyframes fadeInUp {
-  from { opacity: 0; transform: translateY(30px); }
-  to { opacity: 1; transform: translateY(0); }
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 @media (max-width: 768px) {
-  .title { font-size: 3rem; }
-  .grid { grid-template-columns: 1fr; }
-}
+  .title {
+    font-size: 3rem;
+  }
 
+  .grid {
+    grid-template-columns: 1fr;
+  }
+}

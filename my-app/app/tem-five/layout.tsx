@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import FloatingBackButton from "@/components/FloatingBackButton";
 
 export const metadata: Metadata = {
   title: "Retro-Modern Electrical Shop",
@@ -13,7 +14,10 @@ export default function RootLayout({
 }) {
   return (
     <div>
-      <div>{children}</div>
+      <div>
+        {children}
+        <FloatingBackButton />
+      </div>
     </div>
   );
 }

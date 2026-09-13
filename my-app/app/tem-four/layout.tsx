@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Outfit } from "next/font/google";
 import "./globals.css";
+import FloatingBackButton from "@/components/FloatingBackButton";
 
 const outfit = Outfit({
   variable: "--font-outfit",
@@ -15,7 +16,10 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <div>
-      <div>{children}</div>
+      <div>
+        {children}
+        <FloatingBackButton />
+      </div>
     </div>
   );
 }
