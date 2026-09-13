@@ -1,7 +1,28 @@
 "use client";
 
 import { useRef, useState, MouseEvent, useEffect } from "react";
-import { services } from "@/data/services";
+const services = [
+  {
+    title: "Design & Planning",
+    description: "Comprehensive design and planning services tailored to your specific project requirements.",
+    image: "https://images.unsplash.com/photo-1518780664697-55e3ad937233?auto=format&fit=crop&w=800&q=80",
+  },
+  {
+    title: "Interior Construction",
+    description: "High-quality interior construction focusing on modern aesthetics and functional spaces.",
+    image: "https://images.unsplash.com/photo-1599839619722-39751411ea63?auto=format&fit=crop&w=800&q=80",
+  },
+  {
+    title: "Renovation Services",
+    description: "Expert renovation services to transform your existing properties into modern spaces.",
+    image: "https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=800&q=80",
+  },
+  {
+    title: "Project Management",
+    description: "End-to-end project management ensuring your construction projects are completed on time.",
+    image: "https://images.unsplash.com/photo-1788929899432-7753a8a42e1e?fm=jpg&q=60&w=3000&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+  },
+];
 import styles from "./page.module.css";
 
 function AnimatedCard({
