@@ -17,6 +17,7 @@ export function Footer() {
               {[
                 { label: "Home", href: "#hero" },
                 { label: "About us", href: "#about" },
+                { label: "Products", href: "#products" },
                 { label: "service", href: "#services" },
                 { label: "contact", href: "#contact" },
               ].map((l) => (

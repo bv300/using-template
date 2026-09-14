@@ -1,10 +1,19 @@
 /* CSS Reset */
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
-html, body { height: 100%; max-width: 100%; overflow-x: hidden; }
+
+html,
+body {
+  height: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
 body {
   font-family: "Plus Jakarta Sans", "Inter", sans-serif;
   line-height: 1.5;
@@ -12,12 +21,43 @@ body {
   background-color: var(--surface);
   color: var(--ink);
 }
-img, picture, video, canvas, svg { display: block; max-width: 100%; }
-input, button, textarea, select { font: inherit; outline: none; border: none; }
-button, a { -webkit-tap-highlight-color: transparent; }
-a { text-decoration: none; color: inherit; }
-ul, ol { list-style: none; }
-html { scroll-behavior: smooth; }
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+  outline: none;
+  border: none;
+}
+
+button,
+a {
+  -webkit-tap-highlight-color: transparent;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+html {
+  scroll-behavior: smooth;
+}
 
 /* Variables */
 :root {
@@ -34,11 +74,34 @@ html { scroll-behavior: smooth; }
 .font-malayalam {
   font-family: var(--font-malayalam), "Noto Sans Malayalam", sans-serif;
 }
-::selection { background: var(--accent); color: var(--surface); }
-::-webkit-scrollbar { width: 6px; }
-::-webkit-scrollbar-track { background: var(--surface); }
-::-webkit-scrollbar-thumb { background: var(--ink-40); border-radius: 9999px; }
-::-webkit-scrollbar-thumb:hover { background: var(--accent); }
-.hide-scrollbar::-webkit-scrollbar { display: none; }
-.hide-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
 
+::selection {
+  background: var(--accent);
+  color: var(--surface);
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--surface);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--ink-40);
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--accent);
+}
+
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.hide-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
