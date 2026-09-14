@@ -3,13 +3,13 @@ import styles from './Hero.module.css';
 import ScrollReveal from './ScrollReveal';
 
 const galleryImages = [
-  "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=400&q=80",
-  "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=400&q=80",
-  "https://images.unsplash.com/photo-1544723795-3fb6469f5b39?fm=jpg&q=60&w=3000&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-  "https://images.unsplash.com/photo-1580489944761-15a19d654956?auto=format&fit=crop&w=400&q=80",
-  "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&w=400&q=80",
-  "https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?auto=format&fit=crop&w=400&q=80",
-  "https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=400&q=80"
+  "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=400&q=80",
+  "https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?auto=format&fit=crop&w=400&q=80",
+  "https://media.istockphoto.com/id/1484758499/photo/indian-rupee-symbol-with-business-chart-3d-illustration.webp?a=1&b=1&s=612x612&w=0&k=20&c=ey87a2z5d1pAErsTCyQgzi14NHso-pDLsFk6Q1w0oUQ=",
+  "https://images.unsplash.com/photo-1560415755-bd80d06eda60?auto=format&fit=crop&w=400&q=80",
+  "https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?auto=format&fit=crop&w=400&q=80",
+  "https://media.istockphoto.com/id/2187991365/photo/financial-investment-and-success-market-stock-technology-currency-report-money-business.webp?a=1&b=1&s=612x612&w=0&k=20&c=0oplhGalSnw4hsnSbjg7UtgHS7cnaBcUh9bmQ2Hqzio=",
+  "https://images.unsplash.com/photo-1507679799987-c73779587ccf?auto=format&fit=crop&w=400&q=80"
 ];
 
 // Helper to calculate the 3D panoramic transform for each card
@@ -36,20 +36,20 @@ export default function Hero() {
       <ScrollReveal delay={100} direction="up">
         <div className={styles.headerArea}>
           <h1 className={styles.title}>
-            <span className={styles.titleSerif}>Streamline Your Team,</span>
-            Supercharge Your Workflow
+            <span className={styles.titleSerif}>Secure Your Financial Future,</span>
+            Grow Your Wealth
           </h1>
           <p className={styles.subtitle}>
-            All-in-one platform to plan, collaborate, and deliver — faster and smarter.
+            Expert wealth management, strategic investing, and personalized financial planning to help you achieve your goals.
           </p>
-          <button className={styles.ctaBtn}>
+          {/* <button className={styles.ctaBtn}>
             Get started for Free
             <span className={styles.arrowCircle}>
               <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" width="20" height="20" strokeWidth="2">
                 <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
               </svg>
             </span>
-          </button>
+          </button> */}
         </div>
       </ScrollReveal>
 
@@ -72,21 +72,21 @@ export default function Hero() {
       <ScrollReveal delay={300} direction="up">
         <div className={styles.featuresArea}>
           <div className={styles.feature}>
-            <h3 className={styles.featureTitle}>Real-Time Collaboration</h3>
+            <h3 className={styles.featureTitle}>Wealth Management</h3>
             <p className={styles.featureDesc}>
-              Communicate seamlessly and keep everyone in sync with built-in messaging, file sharing, and live updates.
+              Comprehensive strategies designed to protect, grow, and responsibly transfer your wealth across generations.
             </p>
           </div>
           <div className={styles.feature}>
-            <h3 className={styles.featureTitle}>Task & Project Tracking</h3>
+            <h3 className={styles.featureTitle}>Investment Advisory</h3>
             <p className={styles.featureDesc}>
-              Assign tasks, set deadlines, and visualize progress with boards, lists, and timelines tailored to your team's style.
+              Data-driven and diversified investment portfolios tailored specifically to your risk tolerance and objectives.
             </p>
           </div>
           <div className={styles.feature}>
-            <h3 className={styles.featureTitle}>Performance Insights</h3>
+            <h3 className={styles.featureTitle}>Financial Planning</h3>
             <p className={styles.featureDesc}>
-              Make smarter decisions with analytics that show productivity trends, bottlenecks, and team workload balance.
+              Holistic planning to navigate retirement, tax strategies, and life's major financial milestones with confidence.
             </p>
           </div>
         </div>
