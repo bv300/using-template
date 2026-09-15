@@ -1,66 +1,72 @@
-import React from 'react';
+"use client";
+import React, { useEffect, useRef } from 'react';
 import './WhyChooseUs.css';
 
-const ShieldCheckIcon = () => (
-  <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path><path d="m9 12 2 2 4-4"></path></svg>
-);
-
-const TagIcon = () => (
-  <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M12 2H2v10l9.29 9.29c.94.94 2.48.94 3.42 0l6.58-6.58c.94-.94.94-2.48 0-3.42L12 2Z"></path><path d="M7 7h.01"></path></svg>
-);
-
-const ClockIcon = () => (
-  <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
-);
+const stats = [
+  { value: "10k+", label: "Happy Customers" },
+  { value: "500+", label: "Premium Gadgets" },
+  { value: "24/7", label: "Support" }
+];
 
 const WhyChooseUs: React.FC = () => {
+  const galleryRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (galleryRef.current) {
+        const scrollPosition = window.scrollY;
+        // Simple rotation based on scroll
+        galleryRef.current.style.transform = `rotate(${scrollPosition * 0.05}deg)`;
+      }
+    };
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+
   return (
-    <section className="why-section parallax-bg">
-      <div className="why-left">
-        <div className="graph-paper"></div>
-        <div className="floating-panel brutalist-border brutalist-shadow floating">
-          <img 
-            src="https://images.unsplash.com/photo-1758101755915-462eddc23f57?fm=jpg&q=60&w=3000&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" 
-            alt="Electrical Panel"
-            className="img-zoom" 
-          />
-        </div>
-      </div>
-      
-      <div className="why-right">
-        <h2 className="why-title reveal-up">REALMS OF<br/>RELIABILITY</h2>
+    <section id="studio" className="why-section theme-dark py-section">
+      <div className="container">
         
-        <ul className="why-list">
-          <li className="why-item reveal-up delay-100">
-            <div className="why-item-icon brutalist-border">
-              <ShieldCheckIcon />
+        {/* Studio Gallery */}
+        <div className="studio-gallery-container reveal-up">
+          <div className="studio-gallery" ref={galleryRef}>
+            {/* Using placeholders for polaroids */}
+            {[1, 2, 3, 4, 5, 6].map((i) => (
+              <div key={i} className={`polaroid p-${i}`}>
+                <img 
+                  src={`https://images.unsplash.com/photo-1468436139062-f60a71c5c892?q=80&w=400&auto=format&fit=crop&sig=${i}`} 
+                  alt="Tech gadget" 
+                />
+              </div>
+            ))}
+          </div>
+          <div className="gallery-center-text">
+            <h2 className="title-large">Gallery</h2>
+          </div>
+        </div>
+
+        {/* Statistics */}
+        <div className="stats-grid mt-20">
+          {stats.map((stat, index) => (
+            <div key={index} className={`stat-item reveal-up delay-${(index + 1) * 100}`}>
+              <div className="stat-value title-massive">{stat.value}</div>
+              <div className="stat-label text-lead">{stat.label}</div>
             </div>
-            <div className="why-item-content">
-              <h4>LIFETIME WARRANTY</h4>
-              <p>We stand by our craftsmanship. Every installation is backed by an iron-clad guarantee.</p>
-            </div>
-          </li>
-          
-          <li className="why-item reveal-up delay-200">
-            <div className="why-item-icon brutalist-border">
-              <TagIcon />
-            </div>
-            <div className="why-item-content">
-              <h4>UPFRONT PRICING</h4>
-              <p>No hidden fees. No surprises. You know the exact cost before we strip the first wire.</p>
-            </div>
-          </li>
-          
-          <li className="why-item reveal-up delay-300">
-            <div className="why-item-icon brutalist-border">
-              <ClockIcon />
-            </div>
-            <div className="why-item-content">
-              <h4>ON-TIME PROMISE</h4>
-              <p>Your time is valuable. We arrive when we say we will, equipped and ready to execute.</p>
-            </div>
-          </li>
-        </ul>
+          ))}
+        </div>
+
+        {/* Client Trust */}
+        <div className="client-trust mt-20 reveal-up">
+          <h3 className="text-lead trust-headline">The World's Most Ambitious Brands Choose to Work With Us</h3>
+          <div className="logos-cluster">
+            <span className="logo-placeholder">Apple</span>
+            <span className="logo-placeholder">Samsung</span>
+            <span className="logo-placeholder">Sony</span>
+            <span className="logo-placeholder">Dell</span>
+            <span className="logo-placeholder">Bose</span>
+          </div>
+        </div>
+
       </div>
     </section>
   );

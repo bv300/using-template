@@ -1,29 +1,33 @@
 "use client";
-import React from 'react';
-import Marquee from './Marquee';
+import React, { useEffect, useRef } from 'react';
 import './Hero.css';
-import { useScrollReveal } from '@/hooks/useScrollReveal';
 
 const Hero: React.FC = () => {
-  useScrollReveal();
+  const heroRef = useRef<HTMLElement>(null);
+
+  useEffect(() => {
+    // Simple parallax effect on scroll
+    const handleScroll = () => {
+      if (heroRef.current) {
+        const scrolled = window.scrollY;
+        heroRef.current.style.backgroundPositionY = `${scrolled * 0.5}px`;
+      }
+    };
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
 
   return (
-    <section id="home" className="hero-section parallax-bg">
-      <div className="graph-paper"></div>
+    <section id="home" className="hero-section" ref={heroRef}>
+      <div className="hero-overlay"></div>
       
-      <div className="floating-badge pill-shape brutalist-border brutalist-shadow floating badge-1 reveal-up delay-100">
-        24/7 Emergency
+      <div className="container-fluid hero-container">
+        <h1 className="hero-brand reveal-up">
+          NEXUS<br/>
+          Electronics<br/>
+          Store
+        </h1>
       </div>
-      <div className="floating-badge pill-shape brutalist-border brutalist-shadow floating badge-2 reveal-up delay-200">
-        Licensed & Insured
-      </div>
-      <div className="floating-badge pill-shape brutalist-border brutalist-shadow floating badge-3 reveal-up delay-300">
-        Same Day Service
-      </div>
-
-      <h1 className="hero-title reveal-up delay-400">POWER<br/>THE<br/>UNSEEN</h1>
-
-      <Marquee text="→ Wire. Install. Maintain. →" />
     </section>
   );
 };
