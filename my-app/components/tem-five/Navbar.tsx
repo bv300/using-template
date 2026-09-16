@@ -28,8 +28,8 @@ const Navbar: React.FC = () => {
           <a href="#home">NEXUS</a>
         </div>
 
-        <button 
-          className={`mobile-menu-toggle ${isMobileMenuOpen ? 'open' : ''}`} 
+        <button
+          className={`mobile-menu-toggle ${isMobileMenuOpen ? 'open' : ''}`}
           onClick={toggleMobileMenu}
           aria-label="Toggle mobile menu"
         >
@@ -37,7 +37,7 @@ const Navbar: React.FC = () => {
           <span className="bar"></span>
           <span className="bar"></span>
         </button>
-        
+
         <ul className={`nav-links ${isMobileMenuOpen ? 'active' : ''}`}>
           <li><a href="#home" onClick={() => setIsMobileMenuOpen(false)}>Home</a></li>
           <li><a href="#about" onClick={() => setIsMobileMenuOpen(false)}>About</a></li>
