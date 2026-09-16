@@ -55,9 +55,15 @@ export default function Contact() {
           
           <div className={styles.rightColumn}>
             <ScrollReveal delay={200} direction="left">
-              <div className={styles.mapPlaceholder}>
-                {/* This would be an iframe or an actual map integration */}
-                <span>Apex Financial HQ Location</span>
+              <div className={styles.mapContainer}>
+                <iframe 
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4013483.5658097565!2d76.22384915000001!3d10.540630000000002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b0812ffd49cdb11%3A0x7e4d4556b3564e9a!2sKerala!5e0!3m2!1sen!2sin!4v1715000000000!5m2!1sen!2sin" 
+                  className={styles.map} 
+                  allowFullScreen={true} 
+                  loading="lazy" 
+                  referrerPolicy="no-referrer-when-downgrade"
+                  title="Kerala Map"
+                ></iframe>
               </div>
             </ScrollReveal>
           </div>
