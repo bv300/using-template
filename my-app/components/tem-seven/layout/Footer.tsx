@@ -14,7 +14,7 @@ export default function Footer() {
                 <img src={site.logo} alt={`${site.name} Logo`} className={styles.logoImg} />
               )}
               <div className={styles.logoText}>
-                <div className={styles.brandTitle}>{site.name}</div>
+                {/* <div className={styles.brandTitle}>{site.name}</div> */}
               </div>
             </div>
             <p className={styles.tagline}>

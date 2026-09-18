@@ -24,9 +24,9 @@ export default function Navbar() {
             {site.logo && (
               <img src={site.logo} alt={`${site.name} Logo`} className={styles.logoImg} />
             )}
-            <div className={styles.logoText}>
+            {/* <div className={styles.logoText}>
               {site.name}
-            </div>
+            </div> */}
           </a>
 
           <nav className={styles.nav}>
