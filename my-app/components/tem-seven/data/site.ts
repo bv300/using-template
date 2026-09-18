@@ -1,4 +1,4 @@
-import { NavLink, Project } from "@/types";
+import { NavLink, Project } from "@/components/tem-seven/types";
 
 export const site = {
   name: "AL EJABA AL SAREEA",

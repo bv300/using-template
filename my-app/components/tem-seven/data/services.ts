@@ -1,4 +1,4 @@
-import { Service } from "@/types";
+import { Service } from "@/components/tem-seven/types";
 
 export const services: Service[] = [
   {

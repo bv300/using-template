@@ -1,0 +1,63 @@
+.temsix-card {
+  background: var(--bg-secondary, #fff);
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease;
+}
+
+.temsix-card:hover {
+  transform: translateY(-5px);
+}
+
+.temsix-card-image {
+  position: relative;
+  height: 200px;
+}
+
+.temsix-card-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.temsix-card-badge {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  background: var(--primary-color, #000);
+  color: #fff;
+  padding: 0.25rem 0.75rem;
+  border-radius: 999px;
+  font-size: 0.75rem;
+  font-weight: 600;
+}
+
+.temsix-card-content {
+  padding: 1.5rem;
+}
+
+.temsix-card-title {
+  margin: 0 0 0.5rem;
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
+.temsix-card-desc {
+  color: var(--text-secondary, #666);
+  font-size: 0.875rem;
+  line-height: 1.5;
+  margin: 0 0 1rem;
+}
+
+.temsix-card-link {
+  display: inline-block;
+  color: var(--primary-color, #000);
+  font-weight: 600;
+  text-decoration: none;
+  font-size: 0.875rem;
+}
+
+.temsix-card-link:hover {
+  text-decoration: underline;
+}

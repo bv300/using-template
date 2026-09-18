@@ -12,7 +12,7 @@ const navbarVariants = {
         opacity: 1, y: 0,
         transition: {
             duration: 0.8,
-            ease: [0.25, 0.46, 0.45, 0.94],
+            ease: [0.25, 0.46, 0.45, 0.94] as any,
             delay: 0.3,
             when: 'beforeChildren',
             staggerChildren: 0.08,
@@ -24,7 +24,7 @@ const navLinkVariants = {
     hidden: { opacity: 0, y: -12 },
     visible: {
         opacity: 1, y: 0,
-        transition: { duration: 0.5, ease: [0.25, 0.46, 0.45, 0.94] },
+        transition: { duration: 0.5, ease: [0.25, 0.46, 0.45, 0.94] as any},
     },
 };
 

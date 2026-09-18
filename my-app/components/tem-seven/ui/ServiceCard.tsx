@@ -1,4 +1,4 @@
-import { Service } from "@/types";
+import { Service } from "@/components/tem-seven/types";
 import styles from "./ServiceCard.module.css";
 
 export default function ServiceCard({ service }: { service: Service }) {

@@ -51,7 +51,7 @@ const bgVariants = {
     scale: 1,
     transition: {
       duration: 6,
-      ease: [0.25, 0.46, 0.45, 0.94],
+      ease: [0.25, 0.46, 0.45, 0.94] as any,
     },
   },
 };
@@ -64,7 +64,7 @@ const subtitleVariants = {
     y: 0,
     transition: {
       duration: 0.7,
-      ease: [0.25, 0.46, 0.45, 0.94],
+      ease: [0.25, 0.46, 0.45, 0.94] as any,
       delay: 0.4,
     },
   },
@@ -78,7 +78,7 @@ const titleVariants = {
     y: 0,
     transition: {
       duration: 0.8,
-      ease: [0.25, 0.46, 0.45, 0.94],
+      ease: [0.25, 0.46, 0.45, 0.94] as any,
       delay: 0.65,
     },
   },
@@ -92,7 +92,7 @@ const btnVariants = {
     y: 0,
     transition: {
       duration: 0.7,
-      ease: [0.25, 0.46, 0.45, 0.94],
+      ease: [0.25, 0.46, 0.45, 0.94] as any,
       delay: 0.9,
     },
   },

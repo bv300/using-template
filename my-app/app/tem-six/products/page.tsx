@@ -192,7 +192,7 @@ const textVariants = {
     y: 0,
     transition: {
       duration: 0.8,
-      ease: [0.25, 0.46, 0.45, 0.94],
+      ease: [0.25, 0.46, 0.45, 0.94] as any,
       delay: 0.2
     }
   }
@@ -309,7 +309,7 @@ const ProductsPage: React.FC = () => {
                     <motion.p 
                         initial={{ opacity: 0, y: 30 }} 
                         whileInView={{ opacity: 1, y: 0 }} 
-                        transition={{ duration: 0.8, ease: [0.25, 0.46, 0.45, 0.94], delay: 0.3 }}
+                        transition={{ duration: 0.8, ease: [0.25, 0.46, 0.45, 0.94] as any, delay: 0.3 }}
                         viewport={{ once: true, amount: 0.2 }}
                     >
                         Discover why each upgrade matters — and how Carplex delivers the premium quality your vehicle deserves.
@@ -332,7 +332,7 @@ const ProductsPage: React.FC = () => {
                                 viewport={{ once: true, amount: 0.2 }}
                                 variants={{
                                     hidden: { opacity: 0, scale: 0.9 },
-                                    visible: { opacity: 1, scale: 1, transition: { duration: 0.8, ease: [0.25, 0.46, 0.45, 0.94] } }
+                                    visible: { opacity: 1, scale: 1, transition: { duration: 0.8, ease: [0.25, 0.46, 0.45, 0.94] as any} }
                                 }}
                             >
                                 <img src={product.img} alt={product.title.join('')} />
@@ -349,7 +349,7 @@ const ProductsPage: React.FC = () => {
                                 <motion.p 
                                     initial={{ opacity: 0, y: 30 }} 
                                     whileInView={{ opacity: 1, y: 0 }} 
-                                    transition={{ duration: 0.8, ease: [0.25, 0.46, 0.45, 0.94], delay: 0.3 }}
+                                    transition={{ duration: 0.8, ease: [0.25, 0.46, 0.45, 0.94] as any, delay: 0.3 }}
                                     viewport={{ once: true, amount: 0.2 }}
                                 >
                                     {product.desc}
@@ -358,7 +358,7 @@ const ProductsPage: React.FC = () => {
                                     className="importance-box"
                                     initial={{ opacity: 0, y: 30 }} 
                                     whileInView={{ opacity: 1, y: 0 }} 
-                                    transition={{ duration: 0.8, ease: [0.25, 0.46, 0.45, 0.94], delay: 0.4 }}
+                                    transition={{ duration: 0.8, ease: [0.25, 0.46, 0.45, 0.94] as any, delay: 0.4 }}
                                     viewport={{ once: true, amount: 0.2 }}
                                 >
                                     <h4>{product.icon} {product.heading}</h4>
@@ -368,7 +368,7 @@ const ProductsPage: React.FC = () => {
                                                 key={j}
                                                 initial={{ opacity: 0, x: -10 }} 
                                                 whileInView={{ opacity: 1, x: 0 }} 
-                                                transition={{ duration: 0.5, ease: [0.25, 0.46, 0.45, 0.94], delay: 0.5 + (j * 0.1) }}
+                                                transition={{ duration: 0.5, ease: [0.25, 0.46, 0.45, 0.94] as any, delay: 0.5 + (j * 0.1) }}
                                                 viewport={{ once: true, amount: 0.2 }}
                                             >
                                                 {point}
@@ -417,7 +417,7 @@ const ProductsPage: React.FC = () => {
                         className="cta-banner"
                         initial={{ opacity: 0, y: 50 }} 
                         whileInView={{ opacity: 1, y: 0 }} 
-                        transition={{ duration: 0.8, ease: [0.25, 0.46, 0.45, 0.94], delay: 0.2 }}
+                        transition={{ duration: 0.8, ease: [0.25, 0.46, 0.45, 0.94] as any, delay: 0.2 }}
                         viewport={{ once: true, amount: 0.2 }}
                     >
                         <h2>Ready to Upgrade Your Ride?</h2>

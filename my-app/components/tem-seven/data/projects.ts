@@ -1,4 +1,4 @@
-import { CarouselSlide } from "@/types";
+import { CarouselSlide } from "@/components/tem-seven/types";
 
 export const carouselSlides: CarouselSlide[] = [
   {
