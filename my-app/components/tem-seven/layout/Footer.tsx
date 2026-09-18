@@ -10,14 +10,15 @@ export default function Footer() {
           {/* Brand */}
           <div className={styles.brandSection}>
             <div className={styles.logoContainer}>
-              <img src="/images/alejaba_logo_200x200.png" alt="Al Ejaba Logo" className={styles.logoImg} />
+              {site.logo && (
+                <img src={site.logo} alt={`${site.name} Logo`} className={styles.logoImg} />
+              )}
               <div className={styles.logoText}>
-                <div className={styles.brandTitle}>AL EJABA AL SAREEA</div>
-                <p className={styles.legalName}>TECHNICAL SERVICES L.L.C.</p>
+                <div className={styles.brandTitle}>{site.name}</div>
               </div>
             </div>
             <p className={styles.tagline}>
-              General Maintenance | Interior Design | Decoration | Turnkey Fit-Out Solutions
+              {site.tagline}
             </p>
           </div>
 
@@ -38,17 +39,15 @@ export default function Footer() {
           {/* Associate Company */}
           <div className={styles.associateContainer}>
             <div className={styles.heading}>OUR ASSOCIATE COMPANY</div>
-            <img
-              src="/images/our-associate-company.png"
-              alt="Our Associate Company"
-              className={styles.associateImg}
-            />
+            <p className={styles.legalName}>
+              Example Company L.L.C.
+            </p>
           </div>
         </div>
 
         <div className={styles.bottomBar}>
           <span>
-            © 2026 Al Ejaba Al Sareea Technical Services L.L.C. All Rights Reserved.
+            © {new Date().getFullYear()} {site.legalName}. All Rights Reserved.
           </span>
         </div>
       </Container>

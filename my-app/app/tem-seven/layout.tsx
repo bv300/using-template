@@ -37,7 +37,7 @@ export const metadata: Metadata = {
     "Technical Services Contractor",
     "Villa Landscaping Demo City",
     "Commercial Fit-outs Demo City",
-    "Al Ejaba Al Sareea",
+    site.name,
   ],
   authors: [{ name: site.name }],
   creator: site.name,

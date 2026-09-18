@@ -7,7 +7,7 @@ export const services: Service[] = [
     title: "GENERAL MAINTENANCE",
     description: "Reliable maintenance solutions to help keep properties functional, safe and well maintained.",
     points: ["Villas", "Buildings", "Warehouses", "Commercial properties", "Other facility requirements"],
-    image: "/images/SERVICES-GENERAL MAINTENANCE.jpg",
+    image: "https://images.unsplash.com/photo-1581578731548-c64695cc6952?auto=format&fit=crop&w=800&q=80",
   },
   {
     id: "interior-design",
@@ -15,7 +15,7 @@ export const services: Service[] = [
     title: "INTERIOR DESIGN",
     description: "Creative interior solutions that combine functionality, aesthetics and client requirements. We work to transform ideas and imagination into practical and attractive interior environments through design and technical consultation.",
     points: [],
-    image: "/images/SERVICES-INTERIOR-DESIGN.jpg",
+    image: "https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&w=800&q=80",
   },
   {
     id: "decoration-works",
@@ -23,7 +23,7 @@ export const services: Service[] = [
     title: "DECORATION WORKS",
     description: "We create attractive environments through carefully planned decoration and interior improvement works. Our focus is to create an ambiance that reflects the client's requirements and vision.",
     points: [],
-    image: "/images/DECORATION WORKS-SERVICES-.jpg",
+    image: "https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&w=800&q=80",
   },
   {
     id: "turnkey-fitout",
@@ -31,7 +31,7 @@ export const services: Service[] = [
     title: "TURNKEY FIT-OUT",
     description: "Complete fit-out and refurbishment solutions for different types of spaces.",
     points: ["Villas", "Offices", "Restaurants", "Cafeterias", "Supermarkets", "Retail outlets", "Commercial spaces"],
-    image: "/images/TURNKEY FIT-OUT-SERVICES.jpg",
+    image: "https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&w=800&q=80",
   },
   {
     id: "mep-works",
@@ -39,7 +39,7 @@ export const services: Service[] = [
     title: "MEP WORKS",
     description: "Professional technical works.",
     points: ["Mechanical: Mechanical-related technical works", "Electrical: Electrical installation and maintenance requirements", "Plumbing: Plumbing works for residential and commercial requirements"],
-    image: "/images/MEP-WORKS-SERVICES.jpg",
+    image: "https://media.istockphoto.com/id/2284707157/photo/senior-architect-and-construction-engineer-reviewing-building-blueprint-during-interior-site.jpg?s=2048x2048&w=is&k=20&c=dpqlpi9l32F2L42pAzMMDx5jTvz5YPt-HtmlICiwBXY=",
   },
   {
     id: "ac-installation",
@@ -47,7 +47,7 @@ export const services: Service[] = [
     title: "A/C INSTALLATION & MAINTENANCE",
     description: "Air-conditioning installation and maintenance solutions for residential and commercial requirements.",
     points: [],
-    image: "/images/AC INSTALLATION & MAINTENANCE-SERVICES.jpg",
+    image: "https://plus.unsplash.com/premium_photo-1682126009570-3fe2399162f7?fm=jpg&q=60&w=3000&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
   },
   {
     id: "landscaping",
@@ -55,7 +55,7 @@ export const services: Service[] = [
     title: "LANDSCAPING & OUTDOOR WORKS",
     description: "Outdoor solutions designed to improve the functionality and appearance of external spaces.",
     points: ["Landscaping", "Swimming pool areas", "Play areas", "Parking areas", "Interlock works", "Ground levelling", "Fencing works"],
-    image: "/images/LANDSCAPING & OUTDOOR WORKS-SERVICES.jpg",
+    image: "https://images.unsplash.com/photo-1758193431353-87812fbff5cd?fm=jpg&q=60&w=3000&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
   },
   {
     id: "retail-commercial",
@@ -63,7 +63,7 @@ export const services: Service[] = [
     title: "RETAIL & COMMERCIAL WORKS",
     description: "Technical and fit-out solutions for commercial environments.",
     points: ["Retail outlets", "Supermarkets", "Offices", "Hospitality", "Restaurants", "Cafeterias"],
-    image: "/images/RETAIL & COMMERCIAL WORKS-SERVICES.png",
+    image: "https://images.unsplash.com/photo-1441986300917-64674bd600d8?auto=format&fit=crop&w=800&q=80",
   },
   {
     id: "furniture-carpentry",
@@ -71,7 +71,7 @@ export const services: Service[] = [
     title: "FURNITURE & CARPENTRY",
     description: "Practical furniture and carpentry solutions for interior and commercial projects.",
     points: [],
-    image: "/images/FURNITURE & CARPENTRY-SERVICES.jpg",
+    image: "https://images.unsplash.com/photo-1604014237800-1c9102c219da?auto=format&fit=crop&w=800&q=80",
   },
   {
     id: "mezzanine-floor",
@@ -79,6 +79,6 @@ export const services: Service[] = [
     title: "MEZZANINE FLOOR WORKS",
     description: "Practical mezzanine floor solutions for projects requiring additional usable space.",
     points: [],
-    image: "/images/MEZZANINE FLOOR WORKS-SERVICES.jpg",
+    image: "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?auto=format&fit=crop&w=800&q=80",
   },
 ];

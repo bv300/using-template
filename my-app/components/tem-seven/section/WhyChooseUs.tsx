@@ -1,6 +1,7 @@
 import Container from "@/components/tem-seven/ui/Container";
 import SectionTitle from "@/components/tem-seven/ui/SectionTitle";
 import Reveal from "@/components/tem-seven/ui/Reveal";
+import { site } from "@/components/tem-seven/data/site";
 import styles from "./WhyChooseUs.module.css";
 
 const reasons = [
@@ -20,7 +21,7 @@ export default function WhyChooseUs() {
       <Container>
         <div className={styles.header}>
           <Reveal>
-            <SectionTitle eyebrow="WHY CHOOSE US" title="WHY CHOOSE AL EJABA?" dark />
+            <SectionTitle eyebrow="WHY CHOOSE US" title={`WHY CHOOSE ${site.shortName.toUpperCase()}?`} dark />
           </Reveal>
           <Reveal delay={200}>
             <p className={styles.headerDesc}>

@@ -1,5 +1,6 @@
 import Button from "@/components/tem-seven/ui/Button";
 import Reveal from "@/components/tem-seven/ui/Reveal";
+import { site } from "@/components/tem-seven/data/site";
 import styles from "./Hero.module.css";
 
 export default function Hero() {
@@ -16,13 +17,13 @@ export default function Hero() {
             <Reveal delay={200}>
               <div className={styles.eyebrow}>
                 <span className={styles.eyebrowLine} />
-                AL EJABA AL SAREEA
+                {site.name}
               </div>
             </Reveal>
 
             <Reveal delay={400}>
               <h1 className={styles.title}>
-                TECHNICAL SERVICES L.L.C.
+                PROFESSIONAL TECHNICAL SERVICES
               </h1>
             </Reveal>
 
@@ -64,10 +65,10 @@ export default function Hero() {
           {/* Right: Accordion Gallery */}
           <Reveal delay={600}>
             <div className={styles.wrapper}>
-              <div style={{ backgroundImage: "url(/images/hero-image1.png)" }}></div>
-              <div style={{ backgroundImage: "url(/images/hero-image2.png)" }}></div>
-              <div style={{ backgroundImage: "url(/images/hero-image3.png)" }}></div>
-              <div style={{ backgroundImage: "url(/images/hero-image4.png)" }}></div>
+              <div style={{ backgroundImage: "url(https://plus.unsplash.com/premium_photo-1676968002767-1f6a09891350?fm=jpg&q=60&w=3000&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)" }}></div>
+              <div style={{ backgroundImage: "url(https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=1920&q=80)" }}></div>
+              <div style={{ backgroundImage: "url(https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=1920&q=80)" }}></div>
+              <div style={{ backgroundImage: "url(https://images.unsplash.com/photo-1616046229478-9901c5536a45?fm=jpg&q=60&w=3000&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)" }}></div>
             </div>
           </Reveal>
         </div>

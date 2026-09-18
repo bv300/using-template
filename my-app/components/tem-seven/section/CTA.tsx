@@ -1,6 +1,7 @@
 import Button from "@/components/tem-seven/ui/Button";
 import Container from "@/components/tem-seven/ui/Container";
 import Reveal from "@/components/tem-seven/ui/Reveal";
+import { site } from "@/components/tem-seven/data/site";
 import styles from "./CTA.module.css";
 
 export default function CTA() {
@@ -18,7 +19,7 @@ export default function CTA() {
         <Reveal delay={200}>
           <div className={styles.description}>
             <p>
-              Whether you are planning an interior transformation, fit-out project, maintenance work, landscaping project or technical service requirement, Al Ejaba Al Sareea is ready to help.
+              Whether you are planning an interior transformation, fit-out project, maintenance work, landscaping project or technical service requirement, {site.name} is ready to help.
             </p>
             <p>
               We bring together design, technical expertise and skilled workmanship to deliver solutions built around your requirements.

@@ -1,6 +1,7 @@
 import Container from "@/components/tem-seven/ui/Container";
 import SectionTitle from "@/components/tem-seven/ui/SectionTitle";
 import Reveal from "@/components/tem-seven/ui/Reveal";
+import { site } from "@/components/tem-seven/data/site";
 import styles from "./About.module.css";
 
 export default function About() {
@@ -31,7 +32,7 @@ export default function About() {
                 </p>
                 
                 <p className={styles.paragraph}>
-                  Al Ejaba Al Sareea Technical Services L.L.C. is a professional technical services and interior design company with a portfolio of successful projects in the Middle East. Our experience and passion for creativity give us the skills to meet and exceed our clients&apos; expectations.
+                  {site.legalName} is a professional technical services and interior design company with a portfolio of successful projects in the Middle East. Our experience and passion for creativity give us the skills to meet and exceed our clients&apos; expectations.
                 </p>
 
                 <p className={styles.paragraph}>

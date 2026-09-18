@@ -21,12 +21,11 @@ export default function Navbar() {
       >
         <div className={styles.inner}>
           <a href="#home" className={styles.logo}>
-            <img src="/images/alejaba_logo_200x200.png" alt="Al Ejaba Logo" className={styles.logoImg} />
+            {site.logo && (
+              <img src={site.logo} alt={`${site.name} Logo`} className={styles.logoImg} />
+            )}
             <div className={styles.logoText}>
               {site.name}
-              <span className={styles.llc}>
-                TECHNICAL SERVICES L.L.C.
-              </span>
             </div>
           </a>
 

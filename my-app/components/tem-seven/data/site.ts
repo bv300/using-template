@@ -1,17 +1,18 @@
 import { NavLink, Project } from "@/components/tem-seven/types";
 
 export const site = {
-  name: "AL EJABA AL SAREEA",
-  legalName: "Al Ejaba Al Sareea Technical Services L.L.C",
-  shortName: "Al Ejaba Tech",
-  tagline: "Interior design & fit-out consultants",
+  name: "DEMO COMPANY",
+  logo: "https://placehold.co/400x100?text=DEMO+LOGO", // Add your own logo URL here
+  legalName: "Demo Company Technical Services L.L.C",
+  shortName: "Demo Tech",
+  tagline: "Demo Tagline | Professional Services | Fit-Out Solutions",
   description:
-    "Interior design consultants and technical services contractor based in Demo City, with a large portfolio of villas, landscapes and commercial fit-outs across the UAE.",
-  phone2: "+971 58 996 2180",
-  landline: "+971 4 566 3421",
-  email: "info@ejaba.ae",
-  contact: "Bushra Obaid Mohammad",
-  address: "Growbox Group, 1st Floor, Hamsah Complex Block O, Office 112-118, Khalid Bin Al Waleed, Al Karama",
+    "Demo company description providing excellent services with a large portfolio of commercial fit-outs and projects across the country.",
+  phone2: "+1 234 567 8901",
+  landline: "+1 234 567 8900",
+  email: "info@demo-company.com",
+  contact: "John Doe",
+  address: "Demo Building, 1st Floor, Office 112-118, Demo City",
   whatsapp: "971589962180", // Used for wa.me links
   instagram: "https://instagram.com", // Replace with actual Instagram URL
   mapsLink: "https://maps.app.goo.gl/d9FAyzThNKAuyxJm9?g_st=ac",
