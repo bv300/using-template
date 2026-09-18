@@ -153,7 +153,7 @@ const products = [
         reverse: true,
     },
     {
-        img: 'https://images.unsplash.com/photo-1563122870-6b0b48a0af09?auto=format&fit=crop&w=800&q=80',
+        img: 'https://media.istockphoto.com/id/2242115275/photo/close-up-of-a-person-holding-a-car-key-with-a-remote-control-in-front-of-an-open-vehicle-door.jpg?s=1024x1024&w=is&k=20&c=0Ofl1hU2oQK1jYRXlb2k14Bqioa1mtPqFPigUgxRBfE=',
         title: ['Smart Lock ', 'Systems'],
         desc: 'Modernize your vehicle\'s security and convenience with advanced keyless entry, alarm features, and smart lock setups. Maximum protection paired with effortless accessibility.',
         icon: <FaShieldAlt />,
