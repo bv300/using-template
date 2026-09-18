@@ -6,7 +6,7 @@ export const site = {
   shortName: "Al Ejaba Tech",
   tagline: "Interior design & fit-out consultants",
   description:
-    "Interior design consultants and technical services contractor based in Dubai, with a large portfolio of villas, landscapes and commercial fit-outs across the UAE.",
+    "Interior design consultants and technical services contractor based in Demo City, with a large portfolio of villas, landscapes and commercial fit-outs across the UAE.",
   phone2: "+971 58 996 2180",
   landline: "+971 4 566 3421",
   email: "info@ejaba.ae",
@@ -36,7 +36,7 @@ export const projects: Project[] = [
   { name: "Villa 4034", location: "Green Community West, DIP", value: "355,000", scope: "Landscaping, Extension & Interiors" },
   { name: "Villa 3226", location: "Green Community West, DIP", value: "245,000", scope: "Landscaping, Extension & Interiors" },
   { name: "Al Manara Villa", location: "Jumeirah II", value: "450,000", scope: "Landscaping" },
-  { name: "Dubai Realestate Center", location: "DREC", value: "1,530,000", scope: "Interior Fit-out Refurbishment" },
-  { name: "Dubai Realestate Center", location: "DREC", value: "1,300,000", scope: "Landscape, Pool & Play Area" },
+  { name: "Demo City Realestate Center", location: "DREC", value: "1,530,000", scope: "Interior Fit-out Refurbishment" },
+  { name: "Demo City Realestate Center", location: "DREC", value: "1,300,000", scope: "Landscape, Pool & Play Area" },
   { name: "Villa in Al Khawaneej", location: "Al Khawaneej", value: "628,000", scope: "Landscaping Works" },
 ];

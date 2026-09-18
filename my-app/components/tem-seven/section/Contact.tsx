@@ -131,7 +131,7 @@ export default function Contact() {
             </div>
             <div className={styles.mapWrapper}>
               <iframe
-                src="https://maps.google.com/maps?q=Growbox+Group,+Hamsah+Complex,+Al+Karama,+Dubai&t=&z=13&ie=UTF8&iwloc=&output=embed"
+                src="https://maps.google.com/maps?q=Growbox+Group,+Hamsah+Complex,+Al+Karama,+Demo City&t=&z=13&ie=UTF8&iwloc=&output=embed"
                 width="100%"
                 height="100%"
                 style={{ border: 0 }}

@@ -2,7 +2,7 @@ import React from 'react';
 import { FaStar, FaDiamond } from 'react-icons/fa6';
 import './Marqueebar.css';
 
-const LOGO = '/assets/carples logo.png';
+const LOGO = 'https://upload.wikimedia.org/wikipedia/commons/4/44/BMW.svg';
 
 interface MarqueeItem {
   icon: 'star' | 'diamond';
@@ -30,7 +30,7 @@ function MarqueeLap({ suffix = '' }: MarqueeLapProps) {
   return (
     <>
       <span className="marquee-logo-wrap">
-        <img src={LOGO} alt="Carplex UAE" className="marquee-logo" />
+        <img src={LOGO} alt="BMW UAE" className="marquee-logo" />
       </span>
 
       {items.map(({ icon, text }, i) => (

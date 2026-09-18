@@ -9,7 +9,7 @@ const projects = [
     id: 1,
     title: "Luxury Interior Upgrade",
     description: "Complete interior transformation featuring premium Italian leather and custom stitching for a Range Rover.",
-    image: "/assets/upholstery-worksa.png",
+    image: "https://images.unsplash.com/photo-1583121274602-3e2820c69888?auto=format&fit=crop&w=1920&q=80",
     badge: "Upholstery",
     link: "#"
   },
@@ -17,7 +17,7 @@ const projects = [
     id: 2,
     title: "Advanced Multimedia Integration",
     description: "Installation of a state-of-the-art 12-inch Android infotainment system with OEM integration.",
-    image: "/assets/Advanced-Technology.png",
+    image: "https://images.unsplash.com/photo-1502877338535-766e1452684a?auto=format&fit=crop&w=1920&q=80",
     badge: "Tech",
     link: "#"
   },
@@ -25,7 +25,7 @@ const projects = [
     id: 3,
     title: "Full Body Starlight Headliner",
     description: "Bespoke starlight headliner installation with over 1000 individually placed fiber optic stars.",
-    image: "/assets/trusted-auto-upgrades.png",
+    image: "https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?auto=format&fit=crop&w=1920&q=80",
     badge: "Lighting",
     link: "#"
   },
@@ -33,7 +33,7 @@ const projects = [
     id: 4,
     title: "360° Camera System",
     description: "Seamless integration of high-definition 360-degree cameras for enhanced safety and parking.",
-    image: "/assets/Advanced-Technology.png", 
+    image: "https://images.unsplash.com/photo-1502877338535-766e1452684a?auto=format&fit=crop&w=1920&q=80", 
     badge: "Safety",
     link: "#"
   }

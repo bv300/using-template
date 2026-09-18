@@ -13,9 +13,9 @@ const Footer: React.FC = () => {
                 <div className="footer-top">
                     <div className="footer-brand">
                         <Link href="/tem-six" className="logo">
-                            <img src="/assets/carples logo.png" alt="Carplex" className="footer-logo-img" />
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/4/44/BMW.svg" alt="BMW" className="footer-logo-img" />
                         </Link>
-                        <p>Dubai's trusted premium car accessories provider. Transforming rides since 2014 with quality installations and premium products.</p>
+                        <p>Demo City's trusted premium car accessories provider. Transforming rides since 2014 with quality installations and premium products.</p>
                     </div>
 
                     <div className="footer-top-grid">
@@ -64,9 +64,9 @@ const Footer: React.FC = () => {
                             <h4>Contact</h4>
                             <ul>
                                 <li><a href="tel:+(04)271 1275"><FaPhoneAlt size={11} /> +(04)271 1275</a></li>
-                                <li><a href="tel:+971502292861"><FaPhoneAlt size={14} /> +971 50 229 2861</a></li>
-                                <li><a href="mailto:carplexdxb@gmail.com"><FaEnvelope size={14} /> carplexdxb@gmail.com</a></li>
-                                <li><span><FaMapMarkerAlt size={14} /> Ras Al Khor, Dubai</span></li>
+                                <li><a href="tel:+12345678900"><FaPhoneAlt size={14} /> +1 234 567 8900</a></li>
+                                <li><a href="mailto:bmwdxb@gmail.com"><FaEnvelope size={14} /> bmwdxb@gmail.com</a></li>
+                                <li><span><FaMapMarkerAlt size={14} /> Auto City, Demo State</span></li>
                             </ul>
                         </div>
                     </div>
@@ -74,15 +74,15 @@ const Footer: React.FC = () => {
 
                 <div className="footer-bottom">
                     <div className="footer-copyright">
-                        <p>&copy; {new Date().getFullYear()} Carplex Car Accessories LLC. All rights reserved.</p>
+                        <p>&copy; {new Date().getFullYear()} BMW Motors. All rights reserved.</p>
                         <p className="developer-credit">
                             Developed by <a href="https://suhadigitech.com" target="_blank" rel="noopener noreferrer">Suha Digitech</a>
                         </p>
                     </div>
                     <div className="social-links">
-                        <a href="https://www.instagram.com/carplex_accessories?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" className="social-link" aria-label="Instagram"><FaInstagram /></a>
+                        <a href="https://www.instagram.com/bmw_accessories?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" className="social-link" aria-label="Instagram"><FaInstagram /></a>
                         <a href="https://www.facebook.com/share/18UB5SKYLf/?mibextid=wwXIfr" className="social-link" aria-label="Facebook"><FaFacebook /></a>
-                        <a href="https://wa.me/971502292861" className="social-link" aria-label="WhatsApp"><FaWhatsapp /></a>
+                        <a href="https://wa.me/12345678900" className="social-link" aria-label="WhatsApp"><FaWhatsapp /></a>
                     </div>
                 </div>
             </div>

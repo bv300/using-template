@@ -65,16 +65,16 @@ const CountUp: React.FC<CountUpProps> = ({ target, suffix }) => {
 };
 
 const services = [
-    { img: '/assets/Android-Upgrade-card.png',  title: 'Android Upgrade',      desc: 'Latest infotainment with GPS, Apple CarPlay, streaming & full touchscreen control.' },
-    { img: '/assets/camera-360.png',       title: '360° Camera System',   desc: "Bird's-eye surround view for safe parking and effortless maneuvering."              },
-    { img: '/assets/seat-covers-a.png',      title: 'Premium Seat Covers',  desc: 'Luxury leather & diamond-stitched custom covers that transform your cabin.'          },
-    { img: '/assets/Upholstery-Works-c.png',  title: 'Upholstery Works',     desc: 'Professional restoration for seats, door panels and interior trim.'                  },
-    { img: '/assets/car-tinting.png',      title: 'Premium Car Tinting',  desc: 'UV & heat-rejecting films for privacy, comfort and style.'                          },
-    { img: '/assets/LED-Lights.png',      title: 'LED Lighting Upgrade',  desc: 'Upgraded look with energy-efficient, premium LED lighting for enhanced visibility and modern style.'                },
-    { img: '/assets/sound-horns.png',      title: 'Sound Horns',          desc: 'Dual-tone & multi-tone horn systems for enhanced audibility and modern style.'        },
-    { img: '/assets/car-stereo.png',       title: 'Car Stereo Upgrade',   desc: 'High-fidelity speakers, subwoofers, and amps for immersive sound.'                   },
-    { img: '/assets/lock-system.png',      title: 'Smart Lock Systems',   desc: 'Keyless entry, alarm features and smart security for maximum protection.'            },
-    { img: '/assets/car-batteries.png',    title: 'Car Batteries',        desc: 'Premium automotive batteries built for all-weather reliability.'                     },
+    { img: 'https://images.unsplash.com/photo-1549317661-bd32c8ce0db2?auto=format&fit=crop&w=800&q=80',  title: 'Android Upgrade',      desc: 'Latest infotainment with GPS, Apple CarPlay, streaming & full touchscreen control.' },
+    { img: 'https://images.unsplash.com/photo-1550355291-bbee04a92027?auto=format&fit=crop&w=800&q=80',       title: '360° Camera System',   desc: "Bird's-eye surround view for safe parking and effortless maneuvering."              },
+    { img: 'https://images.unsplash.com/photo-1542282088-fe8426682b8f?auto=format&fit=crop&w=800&q=80',      title: 'Premium Seat Covers',  desc: 'Luxury leather & diamond-stitched custom covers that transform your cabin.'          },
+    { img: 'https://images.unsplash.com/photo-1552519507-da3b142c6e3d?auto=format&fit=crop&w=800&q=80',  title: 'Upholstery Works',     desc: 'Professional restoration for seats, door panels and interior trim.'                  },
+    { img: 'https://images.unsplash.com/photo-1605559424843-9e4c228bf1c2?auto=format&fit=crop&w=800&q=80',      title: 'Premium Car Tinting',  desc: 'UV & heat-rejecting films for privacy, comfort and style.'                          },
+    { img: 'https://images.unsplash.com/photo-1563720223185-11003d516935?auto=format&fit=crop&w=800&q=80',      title: 'LED Lighting Upgrade',  desc: 'Upgraded look with energy-efficient, premium LED lighting for enhanced visibility and modern style.'                },
+    { img: 'https://images.unsplash.com/photo-1533473359331-0135ef1b58bf?auto=format&fit=crop&w=800&q=80',      title: 'Sound Horns',          desc: 'Dual-tone & multi-tone horn systems for enhanced audibility and modern style.'        },
+    { img: 'https://images.unsplash.com/photo-1644242833305-78d43be57728?fm=jpg&q=60&w=3000&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',       title: 'Car Stereo Upgrade',   desc: 'High-fidelity speakers, subwoofers, and amps for immersive sound.'                   },
+    { img: 'https://media.istockphoto.com/id/2242115275/photo/close-up-of-a-person-holding-a-car-key-with-a-remote-control-in-front-of-an-open-vehicle-door.jpg?s=1024x1024&w=is&k=20&c=0Ofl1hU2oQK1jYRXlb2k14Bqioa1mtPqFPigUgxRBfE=',      title: 'Smart Lock Systems',   desc: 'Keyless entry, alarm features and smart security for maximum protection.'            },
+    { img: 'https://images.unsplash.com/photo-1619642751034-765dfdf7c58e?auto=format&fit=crop&w=800&q=80',    title: 'Car Batteries',        desc: 'Premium automotive batteries built for all-weather reliability.'                     },
 ];
 
 const stats = [
@@ -104,21 +104,21 @@ const HomePage: React.FC = () => {
     const localBusinessSchema = {
         "@context": "https://schema.org",
         "@type": "LocalBusiness",
-        "@id": "https://carplexuae.com/#organization",
-        "name": "Carplex Car Accessories LLC",
-        "legalName": "Carplex Car Accessories LLC",
-        "url": "https://carplexuae.com/",
-        "logo": "https://carplexuae.com/assets/carples-logo-top.png",
-        "image": "https://carplexuae.com/assets/interior-design.png",
-        "description": "Premium car accessories shop in Nad Al Hammar, Dubai. Specializing in Android screen upgrades, 360 camera installation, seat covers, custom upholstery, window tinting, and audio upgrades.",
-        "telephone": "+971502292861",
-        "email": "info@carplexuae.com",
+        "@id": "https://bmw-demo.com/#organization",
+        "name": "BMW Motors",
+        "legalName": "BMW Motors",
+        "url": "https://bmw-demo.com/",
+        "logo": "https://upload.wikimedia.org/wikipedia/commons/4/44/BMW.svg",
+        "image": "https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?auto=format&fit=crop&w=800&q=80",
+        "description": "Premium car accessories shop in Demo City. Specializing in Android screen upgrades, 360 camera installation, seat covers, custom upholstery, window tinting, and audio upgrades.",
+        "telephone": "+1 234 567 8900",
+        "email": "info@bmw-demo.com",
         "address": {
             "@type": "PostalAddress",
-            "streetAddress": "Al Mansoori Building, Shop 04, Nad Al Hammar",
-            "addressLocality": "Dubai",
-            "addressRegion": "Dubai",
-            "addressCountry": "AE"
+            "streetAddress": "123 BMW Avenue, Auto City",
+            "addressLocality": "Demo City",
+            "addressRegion": "Demo State",
+            "addressCountry": "US"
         },
         "geo": {
             "@type": "GeoCoordinates",
@@ -140,16 +140,16 @@ const HomePage: React.FC = () => {
             }
         ],
         "sameAs": [
-            "https://www.instagram.com/carplex_accessories"
+            "https://www.instagram.com/bmw_accessories"
         ]
     };
 
     useSeo({
-        title: "Carplex Car Accessories | Premium Auto Upgrades in Dubai",
-        description: "Upgrade your ride at Dubai's #1 car accessories shop. We specialize in plug-and-play Android screens, 360° surround-view cameras, custom leather seat covers, full upholstery, heat-rejecting ceramic tinting, and audio upgrades in Nad Al Hammar.",
-        canonicalUrl: "https://carplexuae.com/",
+        title: "BMW Motors | Premium Auto Upgrades in Demo City",
+        description: "Upgrade your ride at Demo City's #1 car accessories shop. We specialize in plug-and-play Android screens, 360° surround-view cameras, custom leather seat covers, full upholstery, heat-rejecting ceramic tinting, and audio upgrades in Auto City.",
+        canonicalUrl: "https://bmw-demo.com/",
         ogType: "website",
-        ogImage: "https://carplexuae.com/assets/carplex-logo-top.png",
+        ogImage: "https://bmw-demo.comhttps://upload.wikimedia.org/wikipedia/commons/4/44/BMW.svg",
         schemas: [localBusinessSchema]
     });
 
@@ -205,19 +205,19 @@ const HomePage: React.FC = () => {
                 <div className="container hp-about-grid">
                     <div className="hp-about-visual reveal">
                         <div className="hp-about-img-frame">
-                            <img src="/assets/interior-design.png" alt="Carplex workshop" />
+                            <img src="https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?auto=format&fit=crop&w=800&q=80" alt="BMW workshop" />
                         </div>
                     </div>
                     <div className="hp-about-text reveal">
                         <div className="hp-section-eyebrow hp-eyebrow-left">
                             <span className="hp-eyebrow-line" />
-                            <span className="hp-eyebrow-text">Why Carplex</span>
+                            <span className="hp-eyebrow-text">Why BMW</span>
                         </div>
                         <h2 className="hp-section-heading">
-                            Dubai's #1<br /><em>Car Accessories</em><br />Specialist
+                            Demo City's #1<br /><em>Car Accessories</em><br />Specialist
                         </h2>
                         <p>
-                            With over a decade in the UAE automotive market, Carplex has built a
+                            With over a decade in the UAE automotive market, BMW has built a
                             reputation for premium quality, expert installations, and service that
                             never compromises.
                         </p>
@@ -253,11 +253,11 @@ const HomePage: React.FC = () => {
                             {[
                                 {
                                     icon: <FaMapMarkerAlt />, title: 'Find Us',
-                                    lines: ['Al Mansoori Building, Shop 04','Nad Al Hmmar, Dubai — UAE','Ras Al Khor, Dubai — UAE'],
+                                    lines: ['123 BMW Avenue','Nad Al Hmmar, Demo City — UAE','Auto City, Demo State — UAE'],
                                 },
                                 {
                                     icon: <FaPhoneAlt />, title: 'Call Us',
-                                    links: [{ href: 'tel:+0042711275', label: '+(04) 271 1275' },{ href: 'tel:+971502292861', label: '+971 50 229 2861' }],
+                                    links: [{ href: 'tel:+0042711275', label: '+(04) 271 1275' },{ href: 'tel:+12345678900', label: '+1 234 567 8900' }],
                                 },
                                 {
                                     icon: <FaClock />, title: 'Open Hours',
@@ -265,7 +265,7 @@ const HomePage: React.FC = () => {
                                 },
                                 {
                                     icon: <FaEnvelope />, title: 'Email',
-                                    links: [{ href: 'mailto:info@carplexuae.com', label: 'info@carplexuae.com' }],
+                                    links: [{ href: 'mailto:info@bmw-demo.com', label: 'info@bmw-demo.com' }],
                                 },
                             ].map((item, i) => (
                                 <div className="hp-contact-card" key={i}>
@@ -283,7 +283,7 @@ const HomePage: React.FC = () => {
                                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3611.0!2d55.35!3d25.19!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjXCsDExJzI0LjAiTiA1NcKwMjEnMDAuMCJF!5e0!3m2!1sen!2sae!4v1700000000000!5m2!1sen!2sae"
                                 allowFullScreen={false} loading="lazy"
                                 referrerPolicy="no-referrer-when-downgrade"
-                                title="Carplex location"
+                                title="BMW location"
                             />
                         </div>
                     </div>

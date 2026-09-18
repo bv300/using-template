@@ -29,7 +29,7 @@ const useReveal = () => {
 
 const products = [
     {
-        img: '/assets/Android-Upgrade-card.png',
+        img: 'https://images.unsplash.com/photo-1549317661-bd32c8ce0db2?auto=format&fit=crop&w=800&q=80',
         title: ['Android ', 'Infotainment Upgrade'],
         desc: 'Replace your outdated factory head unit with a cutting-edge Android touchscreen system. Enjoy seamless GPS navigation, Apple CarPlay, Android Auto, HD video playback, and Bluetooth connectivity — all from a sleek, modern interface.',
         icon: <FaBolt />,
@@ -44,7 +44,7 @@ const products = [
         ],
     },
     {
-        img: '/assets/camera-360.png',
+        img: 'https://images.unsplash.com/photo-1550355291-bbee04a92027?auto=format&fit=crop&w=800&q=80',
         title: ['360° ', 'Camera System'],
         desc: "Our surround-view camera system uses four strategically placed cameras to provide a real-time bird's-eye view of your vehicle. Perfect for tight parking spots, busy roads, and eliminating blind spots.",
         icon: <FaShieldAlt />,
@@ -60,7 +60,7 @@ const products = [
         reverse: true,
     },
     {
-        img: '/assets/seat-covers-a.png',
+        img: 'https://images.unsplash.com/photo-1542282088-fe8426682b8f?auto=format&fit=crop&w=800&q=80',
         title: ['Premium ', 'Seat Covers'],
         desc: 'Our custom-fit seat covers are crafted from top-grade leather with diamond stitching patterns, available in a range of colors and styles. Each cover is precision-cut for your exact car model, offering a factory-finish look.',
         icon: <GiCarSeat />,
@@ -75,7 +75,7 @@ const products = [
         ],
     },
     {
-        img: '/assets/upholstery-works.png',
+        img: 'https://images.unsplash.com/photo-1552519507-da3b142c6e3d?auto=format&fit=crop&w=800&q=80',
         title: ['Upholstery ', 'Works'],
         desc: 'Transform your entire cabin with our bespoke interior design services. From ambient LED lighting and custom dashboard wraps to new steering wheels and premium trim panels — we create an interior that reflects your personality.',
         icon: <FaMagic />,
@@ -91,7 +91,7 @@ const products = [
         reverse: true,
     },
     {
-        img: '/assets/car-tinting.png',
+        img: 'https://images.unsplash.com/photo-1605559424843-9e4c228bf1c2?auto=format&fit=crop&w=800&q=80',
         title: ['Premium ', 'Car Tinting'],
         desc: 'We use top-grade ceramic and nano-carbon window films from leading international brands. Our expert technicians ensure bubble-free, precision application with guaranteed longevity and compliance with local UAE regulations.',
         icon: <FaTint />,
@@ -100,13 +100,13 @@ const products = [
             'Blocks up to 99% of harmful UV rays — protecting your skin and interior from damage',
             'Reduces interior heat by up to 60%, making your AC more efficient and your car comfortable',
             'Provides privacy and security for you and your valuables inside the vehicle',
-            "Reduces glare for safer, more comfortable driving in Dubai's intense sunlight",
+            "Reduces glare for safer, more comfortable driving in Demo City's intense sunlight",
             'Protects dashboard, seats, and trim from UV-induced fading and cracking',
             'Enhances the exterior look of your vehicle with a sleek, uniform appearance',
         ],
     },
     {
-        img: '/assets/LED-Lights.png',
+        img: 'https://images.unsplash.com/photo-1563720223185-11003d516935?auto=format&fit=crop&w=800&q=80',
         title: ['LED Lighting ', ' Upgrade'],
         desc: 'Upgrade your car’s lighting with advanced LED technology for a sharper, more aggressive look and crystal-clear visibility. Our LED retrofit solutions are custom-fitted to ensure perfect compatibility and performance.',
         icon: <FaMagic />,
@@ -122,7 +122,7 @@ const products = [
         reverse: true,
     },
     {
-        img: '/assets/sound-horns.png',
+        img: 'https://images.unsplash.com/photo-1533473359331-0135ef1b58bf?auto=format&fit=crop&w=800&q=80',
         title: ['Sound ', 'Horns'],
         desc: 'Upgrade your vehicle\'s presence on the road with dual-tone and multi-tone horn systems. Engineered for high decibel output to ensure you are heard in busy traffic situations.',
         icon: <FaBolt />,
@@ -137,7 +137,7 @@ const products = [
         ],
     },
     {
-        img: '/assets/car-stereo.png',
+        img: 'https://images.unsplash.com/photo-1601362840469-51e4d8d58785?auto=format&fit=crop&w=800&q=80',
         title: ['Car Stereo ', 'Upgrade'],
         desc: 'Immerse yourself in rich, high-fidelity audio with our complete car stereo upgrade packages. Featuring premium speakers, heavy-hitting subwoofers, and powerful amplifiers designed for acoustic perfection.',
         icon: <FaPhoneAlt />,
@@ -153,7 +153,7 @@ const products = [
         reverse: true,
     },
     {
-        img: '/assets/lock-system.png',
+        img: 'https://images.unsplash.com/photo-1563122870-6b0b48a0af09?auto=format&fit=crop&w=800&q=80',
         title: ['Smart Lock ', 'Systems'],
         desc: 'Modernize your vehicle\'s security and convenience with advanced keyless entry, alarm features, and smart lock setups. Maximum protection paired with effortless accessibility.',
         icon: <FaShieldAlt />,
@@ -168,7 +168,7 @@ const products = [
         ],
     },
     {
-        img: '/assets/car-batteries.png',
+        img: 'https://images.unsplash.com/photo-1619642751034-765dfdf7c58e?auto=format&fit=crop&w=800&q=80',
         title: ['Car ', 'Batteries'],
         desc: 'Power your ride dependably with our selection of premium automotive batteries. Built to withstand extreme heat and demanding electrical loads from modern vehicle accessories.',
         icon: <FaBolt />,
@@ -210,11 +210,11 @@ const ProductsPage: React.FC = () => {
         "@context": "https://schema.org",
         "@type": "Product",
         "name": prod.title.join(''),
-        "image": `https://carplexuae.com${prod.img}`,
+        "image": `https://bmw-demo.com${prod.img}`,
         "description": prod.desc,
         "brand": {
             "@type": "Brand",
-            "name": "Carplex"
+            "name": "BMW"
         },
         "offers": {
             "@type": "Offer",
@@ -222,16 +222,16 @@ const ProductsPage: React.FC = () => {
             "price": "Call for Quote",
             "priceValidityDate": "2027-12-31",
             "availability": "https://schema.org/InStock",
-            "url": "https://carplexuae.com/products"
+            "url": "https://bmw-demo.com/products"
         },
         "provider": {
             "@type": "LocalBusiness",
-            "name": "Carplex Car Accessories LLC",
-            "telephone": "+971502292861",
+            "name": "BMW Motors",
+            "telephone": "+12345678900",
             "address": {
                 "@type": "PostalAddress",
-                "streetAddress": "Al Mansoori Building, Shop 04, Nad Al Hammar",
-                "addressLocality": "Dubai",
+                "streetAddress": "123 BMW Avenue, Auto City",
+                "addressLocality": "Demo City",
                 "addressCountry": "AE"
             }
         }
@@ -251,10 +251,10 @@ const ProductsPage: React.FC = () => {
             },
             {
                 "@type": "Question",
-                "name": "What window tint options do you offer, and are they legal in Dubai?",
+                "name": "What window tint options do you offer, and are they legal in Demo City?",
                 "acceptedAnswer": {
                     "@type": "Answer",
-                    "text": "We offer premium nano-ceramic and carbon window tint films from top international brands. These block up to 99% of UV rays and 60% of infrared heat. All our tint percentages comply strictly with Dubai Police and UAE traffic regulations (up to 50% tint limit for private cars) to ensure legal compliance."
+                    "text": "We offer premium nano-ceramic and carbon window tint films from top international brands. These block up to 99% of UV rays and 60% of infrared heat. All our tint percentages comply strictly with Demo City Police and UAE traffic regulations (up to 50% tint limit for private cars) to ensure legal compliance."
                 }
             },
             {
@@ -277,11 +277,11 @@ const ProductsPage: React.FC = () => {
     };
 
     useSeo({
-        title: "Carplex | Premium Car Accessories & Upgrades Dubai",
-        description: "Explore our collection of elite car products in Dubai. Featuring high-tech Android screens, 360 surround-view parking cameras, custom leather seat covers, ceramic window tinting, sound horns, and custom stereos.",
-        canonicalUrl: "https://carplexuae.com/products",
+        title: "BMW | Premium Car Accessories & Upgrades Demo City",
+        description: "Explore our collection of elite car products in Demo City. Featuring high-tech Android screens, 360 surround-view parking cameras, custom leather seat covers, ceramic window tinting, sound horns, and custom stereos.",
+        canonicalUrl: "https://bmw-demo.com/products",
         ogType: "website",
-        ogImage: "https://carplexuae.com/assets/carplex-logo-top.png",
+        ogImage: "https://bmw-demo.comhttps://upload.wikimedia.org/wikipedia/commons/4/44/BMW.svg",
         schemas: [...productSchemas, faqSchema]
     });
 
@@ -312,7 +312,7 @@ const ProductsPage: React.FC = () => {
                         transition={{ duration: 0.8, ease: [0.25, 0.46, 0.45, 0.94] as any, delay: 0.3 }}
                         viewport={{ once: true, amount: 0.2 }}
                     >
-                        Discover why each upgrade matters — and how Carplex delivers the premium quality your vehicle deserves.
+                        Discover why each upgrade matters — and how BMW delivers the premium quality your vehicle deserves.
                     </motion.p>
                 </div>
             </section>
@@ -422,7 +422,7 @@ const ProductsPage: React.FC = () => {
                     >
                         <h2>Ready to Upgrade Your Ride?</h2>
                         <p>Visit our showroom or call us today for a free consultation and expert advice on your car accessories.</p>
-                        <a href="tel:+971502292861" className="btn-white"><FaPhoneAlt /> Call +971 50 229 2861</a>
+                        <a href="tel:+12345678900" className="btn-white"><FaPhoneAlt /> Call +1 234 567 8900</a>
                     </motion.div>
                 </div>
             </section>

@@ -27,16 +27,16 @@ const plexMono = IBM_Plex_Mono({
 
 export const metadata: Metadata = {
   title: {
-    default: `${site.shortName} | Interior Design & Technical Services, Dubai`,
+    default: `${site.shortName} | Interior Design & Technical Services, Demo City`,
     template: `%s | ${site.legalName}`,
   },
   description: site.description,
   keywords: [
-    "Interior Design Dubai",
+    "Interior Design Demo City",
     "Fit-out Consultants UAE",
     "Technical Services Contractor",
-    "Villa Landscaping Dubai",
-    "Commercial Fit-outs Dubai",
+    "Villa Landscaping Demo City",
+    "Commercial Fit-outs Demo City",
     "Al Ejaba Al Sareea",
   ],
   authors: [{ name: site.name }],
@@ -93,8 +93,8 @@ export default function RootLayout({
     address: {
       "@type": "PostalAddress",
       streetAddress: site.address,
-      addressLocality: "Dubai",
-      addressRegion: "Dubai",
+      addressLocality: "Demo City",
+      addressRegion: "Demo City",
       addressCountry: "AE",
     },
     geo: {
@@ -106,7 +106,7 @@ export default function RootLayout({
     priceRange: "$$$",
     areaServed: {
       "@type": "City",
-      name: "Dubai",
+      name: "Demo City",
     },
   };
 

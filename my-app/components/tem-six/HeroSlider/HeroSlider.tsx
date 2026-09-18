@@ -20,21 +20,21 @@ interface SlideData {
 
 const slides: SlideData[] = [
   {
-    image: '/assets/trusted-auto-upgrades.png',
-    subtitle: 'Dubai\'s Trusted Auto Upgrades',
+    image: 'https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?auto=format&fit=crop&w=1920&q=80',
+    subtitle: 'Demo City\'s Trusted Auto Upgrades',
     title: 'Precision &amp; <span>Prestige</span>',
     description: 'Transform your vehicle with our premium range of top-tier accessories. From android systems to custom seat covers.',
     btnText: 'Explore Collection'
   },
   {
-    image: '/assets/upholstery-worksa.png',
+    image: 'https://images.unsplash.com/photo-1583121274602-3e2820c69888?auto=format&fit=crop&w=1920&q=80',
     subtitle: 'Luxury Redefined',
     title: 'Custom <span>upholstery works</span>',
     description: 'Bespoke designs tailored to your style. Experience the pinnacle of automotive interior craftsmanship.',
     btnText: 'View Services'
   },
   {
-    image: '/assets/Advanced-Technology.png',
+    image: 'https://images.unsplash.com/photo-1502877338535-766e1452684a?auto=format&fit=crop&w=1920&q=80',
     subtitle: 'Advanced Technology',
     title: 'Smart <span>Integration</span>',
     description: 'Stay connected and safe on the road with our cutting-edge 360° cameras and OEM-integrated Android screens.',

@@ -23,7 +23,7 @@ const PageLoader: React.FC = () => {
       <div className="loader-content">
         <div className="loader-circle"></div>
         <div className="loader-logo-container">
-          <img src="/assets/carples logo.png" alt="Carplex" className="loader-logo" />
+          <img src="https://upload.wikimedia.org/wikipedia/commons/4/44/BMW.svg" alt="BMW" className="loader-logo" />
         </div>
       </div>
     </div>

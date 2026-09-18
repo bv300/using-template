@@ -50,7 +50,7 @@ const Navbar: React.FC = () => {
 
     const handleCall = (e: React.MouseEvent<HTMLAnchorElement>) => {
         e.preventDefault();
-        window.location.href = 'tel:+971502292861';
+        window.location.href = 'tel:+12345678900';
         setTimeout(() => setMenuOpen(false), 150);
     };
 
@@ -67,7 +67,7 @@ const Navbar: React.FC = () => {
             <div className="navbar-container">
                 <motion.div variants={navLinkVariants}>
                     <Link href="/tem-six" className="logo" onClick={closeMenu}>
-                        <img src="/assets/carples logo.png" alt="Carplex" className="logo-img" />
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/4/44/BMW.svg" alt="BMW" className="logo-img" />
                     </Link>
                 </motion.div>
 
@@ -90,7 +90,7 @@ const Navbar: React.FC = () => {
                         <a href="/tem-six#contact" onClick={closeMenu}>Contact</a>
                     </motion.li>
                     <motion.li variants={navLinkVariants}>
-                        <a href="tel:+971502292861" className="nav-cta" onClick={handleCall}>
+                        <a href="tel:+12345678900" className="nav-cta" onClick={handleCall}>
                             <FaPhoneAlt size={13} /> Call Now
                         </a>
                     </motion.li>
