@@ -1,0 +1,96 @@
+.temsix-project-hub {
+  padding: 100px 0;
+  background-color: #0a0a0a;
+  color: #fff;
+  position: relative;
+  overflow: hidden;
+}
+
+.temsix-project-hub::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.1), transparent);
+}
+
+.temsix-project-hub-container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+.temsix-project-hub-header {
+  text-align: center;
+  margin-bottom: 60px;
+  max-width: 700px;
+  margin-inline: auto;
+}
+
+.temsix-project-hub-title {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+  letter-spacing: -1px;
+}
+
+.temsix-project-hub-title span {
+  color: #d4af37; /* Gold accent */
+  font-style: italic;
+  font-weight: 400;
+}
+
+.temsix-project-hub-subtitle {
+  color: #a0a0a0;
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+.temsix-project-hub-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 32px;
+  margin-bottom: 50px;
+}
+
+.temsix-project-hub-cta {
+  text-align: center;
+}
+
+.temsix-btn-outline {
+  display: inline-block;
+  padding: 14px 32px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 30px;
+  color: #fff;
+  text-decoration: none;
+  font-size: 0.95rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: all 0.3s ease;
+  background: transparent;
+}
+
+.temsix-btn-outline:hover {
+  border-color: #d4af37;
+  color: #d4af37;
+  background: rgba(212, 175, 55, 0.05);
+}
+
+@media (max-width: 768px) {
+  .temsix-project-hub {
+    padding: 70px 0;
+  }
+
+  .temsix-project-hub-title {
+    font-size: 2.2rem;
+  }
+
+  .temsix-project-hub-grid {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+}
